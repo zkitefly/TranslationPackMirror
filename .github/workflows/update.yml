@@ -47,7 +47,9 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          mkdir 'gitcode' && cd './gitcode'
+          rm -r './gitcode'
+          mkdir 'gitcode'
+          cd './gitcode'
           git clone https://gitcode.net/chearlai/I18nUpdateMod-resources.git
           git config --global user.name "zkitefly"
           git config --global user.email "z18344203426@qq.com"
@@ -64,12 +66,12 @@ jobs:
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
+          git push
+          cd ../
+          rm -r './gitcode'
           fi
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         shell: bash
         run: |
-          cd './gitcode'
-          git push -u origin main
-          cd ../
-          rm -r './gitcode'
+          echo 'https://gitcode.net/chearlai/I18nUpdateMod-resources'
