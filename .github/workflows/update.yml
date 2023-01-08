@@ -1,12 +1,15 @@
 name: update_resources
-on:
-  schedule:
-    # - cron: '0 7 * * *'
-    - cron: '5 */1 * * *'
-  repository_dispatch:
-    types: [update_resources]
+# on:
+#  schedule:
+#    # - cron: '0 7 * * *'
+#    - cron: '5 */1 * * *'
+#  repository_dispatch:
+#     types: [update_resources]
+
+on: [push, pull_request]
+
 jobs:
-  update_history:
+  update_resources:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -35,3 +38,33 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+  update_resources-gitcode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch resources changes
+        id: fetch_changes
+        shell: bash
+        run: |
+          mkdir gitcode && cd ./gitcode
+          git config --global user.name "zkitefly"
+          git config --global user.email "z18344203426@qq.com"
+          wget --help && wget -t 50 -c -i 'http://downloader1.meitangdehulu.com:22943' && ls && rm 'index.html'
+          git add -A
+          if git diff-index --quiet HEAD; then
+            # No changes
+            echo '::set-output name=changed::false'
+          else
+            # Changes detected
+            echo '::set-output name=changed::true'
+            git commit -m "Update resources
+
+          GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
+            "
+          fi
+      - name: Push changes
+        if: steps.fetch_changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git push -u origin main
+          cd ../ && rm -r gitcode
