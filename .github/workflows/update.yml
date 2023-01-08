@@ -47,7 +47,7 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          rm './gitcode'
+          rm -r './gitcode'
           cd './gitcode'
           git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources gitcode/I18nUpdateMod-resources
           git submodule update --init --recursive
