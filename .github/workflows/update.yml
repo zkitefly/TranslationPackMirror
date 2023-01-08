@@ -47,10 +47,10 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          rm -r './gitcode'
-          mkdir 'gitcode'
+          rm './gitcode'
           cd './gitcode'
-          git clone https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources gitcode/I18nUpdateMod-resources
+          git submodule update --init --recursive
           git config --global user.name "zkitefly"
           git config --global user.email "z18344203426@qq.com"
           wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
@@ -68,7 +68,6 @@ jobs:
             "
           git push
           cd ../
-          rm -r './gitcode'
           fi
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
