@@ -48,6 +48,7 @@ jobs:
         shell: bash
         run: |
           rm -r './gitcode'
+          mkdir 'gitcode'
           cd './gitcode'
           git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources gitcode/I18nUpdateMod-resources
           git submodule update --init --recursive
