@@ -24,10 +24,10 @@ jobs:
           git add .
           if git diff-index --quiet HEAD; then
             # No changes
-            echo "{changed}={false}" >> $GITHUB_OUTPUT
+            echo '::set-output name=changed::false'
           else
             # Changes detected
-            echo "{changed}={true}" >> $GITHUB_OUTPUT
+          echo '::set-output name=changed::true'
             git commit -m "Update resources
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
