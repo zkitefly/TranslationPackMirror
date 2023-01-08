@@ -47,12 +47,7 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          rm -r './gitcode'
-          mkdir 'gitcode'
-          cd './gitcode'
-          # git pull
-          git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-          git submodule update --init --recursive
+          git rm --cached I18nUpdateMod-resources
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         shell: bash
