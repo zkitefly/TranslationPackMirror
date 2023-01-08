@@ -28,7 +28,6 @@ jobs:
           else
             # Changes detected
             echo "{changed}={true}" >> $GITHUB_OUTPUT
-            git push gitcode master
             git commit -m "Update resources
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
