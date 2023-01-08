@@ -15,7 +15,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          ./update.sh
+          wget --mirror --tries=100 --continue 'http://downloader1.meitangdehulu.com:22943' && cd './downloader1.meitangdehulu.com:22943' && rm 'index.html' && ls && mv * ../ && cd ../ && rm 'downloader1.meitangdehulu.com:22943' && ls
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
