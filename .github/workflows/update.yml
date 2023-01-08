@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          wget -t 50 -c -i 'http://downloader1.meitangdehulu.com:22943' && ls && rm 'index.html'
+          wget --help && wget -t 50 -c -i 'http://downloader1.meitangdehulu.com:22943' && ls && rm 'index.html'
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
