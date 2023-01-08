@@ -19,9 +19,6 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          echo 'push gitcoge'
-          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-          git remote -v
           wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm 'index.html'
           git add -A
@@ -30,8 +27,8 @@ jobs:
             echo "{changed}={false}" >> $GITHUB_OUTPUT
           else
             # Changes detected
-            echo '::set-output name=changed::true'
             echo "{changed}={true}" >> $GITHUB_OUTPUT
+            git push gitcode master
             git commit -m "Update resources
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
@@ -43,3 +40,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+        run: |
+          echo 'push gitcode'
+          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git remote -v
+          git push -u gitcode main
