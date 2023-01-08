@@ -1,8 +1,8 @@
 name: update_resources
+
 # on:
 #  schedule:
-#    # - cron: '0 7 * * *'
-#    - cron: '5 */1 * * *'
+#    - cron: '0 3 * * *'
 #  repository_dispatch:
 #     types: [update_resources]
 
@@ -33,6 +33,9 @@ jobs:
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
+          echo 'push gitcoge'
+          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git remote -v
           fi
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
