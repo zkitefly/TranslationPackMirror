@@ -1,4 +1,0 @@
-[submodule "3rdparty/benchmarks"]
-	path = gitcode/I18nUpdateMod-resources
-	url = https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-	branch = main
