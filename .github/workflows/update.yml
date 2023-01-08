@@ -2,7 +2,7 @@ name: update_resources
 on:
   schedule:
     # - cron: '0 7 * * *'
-    - cron: '30 */1 * * *'
+    - cron: '5 */1 * * *'
   repository_dispatch:
     types: [update_resources]
 jobs:
