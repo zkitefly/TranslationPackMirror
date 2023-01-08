@@ -19,7 +19,8 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/' && rm 'index.html'
+          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
+          rm 'index.html'
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
@@ -34,7 +35,7 @@ jobs:
           fi
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
@@ -47,9 +48,11 @@ jobs:
         shell: bash
         run: |
           mkdir 'gitcode' && cd './gitcode'
+          git clone https://gitcode.net/chearlai/I18nUpdateMod-resources.git
           git config --global user.name "zkitefly"
           git config --global user.email "z18344203426@qq.com"
-          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/' && rm 'index.html'
+          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
+          rm 'index.html'
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
@@ -68,4 +71,5 @@ jobs:
         run: |
           cd './gitcode'
           git push -u origin main
-          cd ../ && rm -r './gitcode'
+          cd ../
+          rm -r './gitcode'
