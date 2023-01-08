@@ -44,6 +44,6 @@ jobs:
         shell: bash
         run: |
           echo 'push gitcode'
-          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git remote add gitcode https://chearlai@gitcode.net/chearlai/I18nUpdateMod-resources.git
           git remote -v
           git push -u gitcode main
