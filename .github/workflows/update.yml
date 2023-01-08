@@ -47,7 +47,7 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          git rm --cached I18nUpdateMod-resources
+          rm -r './gitcode'
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         shell: bash
