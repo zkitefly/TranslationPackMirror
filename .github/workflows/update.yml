@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          wget --help && wget -t 50 -c -i './filelist.txt' && ls && rm 'index.html'
+          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/' && rm 'index.html'
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
@@ -49,7 +49,8 @@ jobs:
           mkdir gitcode && cd ./gitcode
           git config --global user.name "zkitefly"
           git config --global user.email "z18344203426@qq.com"
-          wget --help && wget -t 50 -c -i 'http://downloader1.meitangdehulu.com:22943' && ls && rm 'index.html'
+          # wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/' && rm 'index.html'
+          wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 –reject=md5 'http://downloader1.meitangdehulu.com:22943/' && wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 –reject=zip 'http://downloader1.meitangdehulu.com:22943/' && rm 'index.html'
           git add -A
           if git diff-index --quiet HEAD; then
             # No changes
