@@ -51,7 +51,7 @@ jobs:
           mkdir 'gitcode'
           cd './gitcode'
           # git pull
-          git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources.git gitcode/I18nUpdateMod-resources
+          git submodule add https://gitcode.net/chearlai/I18nUpdateMod-resources.git gitcode/I18nUpdateMod-resources/gitcode
           git submodule update --init --recursive
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
