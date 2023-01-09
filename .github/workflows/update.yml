@@ -1,12 +1,12 @@
 name: update_resources
 
-# on:
-#  schedule:
-#    - cron: '0 3 * * *'
-#  repository_dispatch:
-#     types: [update_resources]
+on:
+ schedule:
+   - cron: '30 */2 * *'
+ repository_dispatch:
+    types: [update_resources]
 
-on: [push, pull_request]
+# on: [push, pull_request]
 
 jobs:
   update_resources:
