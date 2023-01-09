@@ -19,15 +19,17 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          echo '==================================================='
           wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm 'index.html'
+          echo '==================================================='
           git add .
           if git diff-index --quiet HEAD; then
             # No changes
-            echo 'change=false' >> $GITHUB_OUTPUT
+            echo 'changed=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
-            echo 'change=true' >> $GITHUB_OUTPUT
+            echo 'changed=true' >> $GITHUB_OUTPUT
             git commit -m "Update resources（`date +'%Y-%m-%d'`）
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
