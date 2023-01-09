@@ -92,28 +92,28 @@
 
 *https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 539 KB/s  用时 7.2s
+平均 3.07 MB/s  用时 1.2s
 
 ——————————————
 
 *https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 2.00MB/s  用时 1.9s
+平均 946 KB/s  用时 4.1s
 
 ——————————————
 
 *https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 664 KB/s  用时 5.9s
+平均 3.74 MB/s  用时 1.0s
 
 ——————————————
 
 *https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 786 KB/s  用时 5.0s
+平均 3.20 MB/s  用时 1.2s
 
 ——————————————
 
 *https://zkitefly.github.io/I18nUpdateMod-resources/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 668 KB/s  用时 5.8s
+平均 3.19 MB/s  用时 1.2s
