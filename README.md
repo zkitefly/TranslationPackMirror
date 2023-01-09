@@ -2,13 +2,23 @@
 
 ## 下载地址：
 
-*注：下方的地址使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io 加速。*
+*注：下方的地址使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io & ghproxy.com加速。*
 
 [**本仓库所含的 zip 文件**](/files)
 
 ——————————————
 
-#### **☆推荐**
+### **☆推荐**
+
+**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/ + [本仓库所含的 zip 文件](/files)**
+
+例如：
+
+**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+
+### 其他
+
+——————————————
 
 **https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/ + [本仓库所含的 zip 文件](/files)**
 
@@ -68,6 +78,12 @@
 
 ——————————————
 
+*ghproxy.com*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhB4PrXvES6IJLgNL/root/content)
+
+——————————————
+
 *cdn.staticaly.com*
 
 ![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBnZCrGnVEtWZNGI/root/content)
@@ -99,6 +115,12 @@
 *https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 946 KB/s  用时 4.1s
+
+——————————————
+
+*https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
+
+平均 5.29 MB/s 用时 0.7s
 
 ——————————————
 
