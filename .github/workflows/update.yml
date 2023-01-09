@@ -25,21 +25,24 @@ jobs:
           if git diff-index --quiet HEAD; then
             # No changes
             echo '::set-output name=changed::false'
+            echo 'change=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
-          echo '::set-output name=changed::true'
-            git commit -m "Update resources
+            echo 'change=true' >> $GITHUB_OUTPUT
+            git commit -m "Update resources（`date +'%Y-%m-%d'`）
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
           fi
-      - name: Push changes to GitHub
+      - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
+        shell: bash
+        run: |
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-#       - name: Push changes to GitCode
+#      - name: Push changes to GitCode
 #         if: steps.fetch_changes.outputs.changed == 'true'
 #         shell: bash
 #         run: |
