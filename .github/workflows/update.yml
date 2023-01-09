@@ -36,6 +36,7 @@ jobs:
         shell: bash
         run: |
           cp './readme_template.txt' './tmp.txt'
+          ls
           ls >> './tmp.txt'
           echo '```' >> './tmp.txt'
           cp './tmp.txt' './README.md'
