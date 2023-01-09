@@ -9,6 +9,13 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
+          echo '==================================================='
+          # https://www.codenong.com/2-flush-clear-dns-cache-linux
+          echo 'flushdns'
+          sudo systemctl is-active systemd-resolve.service
+          sudo systemd-resolve --statistics
+          sudo systemd-resolve --flush-caches
+          echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
