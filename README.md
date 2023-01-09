@@ -8,6 +8,14 @@
 
 #### ☆
 
+**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
+
+例如：
+
+**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
+
+——
+
 **https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
 
 例如：
@@ -31,14 +39,6 @@
 例如：
 
 **https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
-
-——
-
-**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
-
-例如：
-
-**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——
 
