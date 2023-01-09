@@ -10,7 +10,6 @@ jobs:
         shell: bash
         run: |
           echo '==================================================='
-          # https://www.codenong.com/2-flush-clear-dns-cache-linux
           echo 'flushdns'
           sudo './flashdns.sh'
           echo '==================================================='
@@ -18,7 +17,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '==================================================='
-          # wget --random-wait --continue -d -N -t 10 -i 'http://downloader.meitangdehulu.com/'
+          wget --random-wait --continue -d -N -t 10 -i 'http://downloader.meitangdehulu.com/'
           rm 'index.html'
           echo '==================================================='
           git add -A
