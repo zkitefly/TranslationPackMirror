@@ -39,11 +39,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-      - name: Push changes to GitCode
-        if: steps.fetch_changes.outputs.changed == 'true'
-        shell: bash
-        run: |
-          echo 'push gitcode'
-          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-          git remote -v
-          git push -u gitcode main
+#       - name: Push changes to GitCode
+#         if: steps.fetch_changes.outputs.changed == 'true'
+#         shell: bash
+#         run: |
+#           echo 'push gitcode'
+#           git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+#           git remote -v
+#           git push -u gitcode main
