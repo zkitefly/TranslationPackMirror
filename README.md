@@ -1,4 +1,8 @@
-# I18nUpdateMod-resources
+# TranslationPackMirror
+
+**本仓库自动从 `http://downloader1.meitangdehulu.com:22943/` 获取资源并由下面的地址分发下载**
+
+**每小时检查更新**
 
 ## 下载地址：
 
@@ -60,46 +64,6 @@
 
 **https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
-## 下载地址延迟对比
-
-测试平台：https://www.itdog.cn/ping
-
-——————————————
-
-*ghproxy.net*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBfGgBYvyIKlmsh2/root/content)
-
-——————————————
-
-*jsd.cdn.zzko.cn*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBYPE8Vkj0_808li/root/content)
-
-——————————————
-
-*ghproxy.com*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhB4PrXvES6IJLgNL/root/content)
-
-——————————————
-
-*cdn.staticaly.com*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBnZCrGnVEtWZNGI/root/content)
-
-——————————————
-
-*raw.iqiq.io*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBpHjcL4KgiauPcu/root/content)
-
-——————————————
-
-*zkitefly.github.io*
-
-![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBg5NCtPz0AUtn7l/root/content)
-
 ## 下载速度对比（不严谨）
 
 使用 wget 下载资源
@@ -139,3 +103,43 @@
 *https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 3.19 MB/s  用时 1.2s
+
+## 下载地址延迟对比
+
+测试平台：https://www.itdog.cn/ping
+
+——————————————
+
+*ghproxy.net*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBfGgBYvyIKlmsh2/root/content)
+
+——————————————
+
+*jsd.cdn.zzko.cn*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBYPE8Vkj0_808li/root/content)
+
+——————————————
+
+*ghproxy.com*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhB4PrXvES6IJLgNL/root/content)
+
+——————————————
+
+*cdn.staticaly.com*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBnZCrGnVEtWZNGI/root/content)
+
+——————————————
+
+*raw.iqiq.io*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBpHjcL4KgiauPcu/root/content)
+
+——————————————
+
+*zkitefly.github.io*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhBg5NCtPz0AUtn7l/root/content)
