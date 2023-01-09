@@ -24,7 +24,6 @@ jobs:
           git add .
           if git diff-index --quiet HEAD; then
             # No changes
-            echo '::set-output name=changed::false'
             echo 'change=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
@@ -36,8 +35,6 @@ jobs:
           fi
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
-        shell: bash
-        run: |
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
