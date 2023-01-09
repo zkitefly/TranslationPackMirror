@@ -19,7 +19,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '==================================================='
           # wget --random-wait --continue -d -N -t 10 -i 'http://downloader.meitangdehulu.com/'
-          wget --random-wait --continue -d -N -t 10 -i 'http://downloader1.meitangdehulu.com:22943/Minecraft-Mod-Language-Modpack-1-16-Fabric.zip'
           rm 'index.html'
           echo '==================================================='
           git add -A
