@@ -1,8 +1,12 @@
 name: update_resources
 
+on:
+ schedule:
+   - cron: '30 */2 * *'
+ repository_dispatch:
+    types: [update_resources]
 
-
-on: [push, pull_request]
+# on: [push, pull_request]
 
 jobs:
   update_resources:
@@ -31,11 +35,11 @@ jobs:
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
           fi
-      - name: Edit README
-        if: steps.fetch_changes.outputs.changed == 'true'
-        shell: bash
-        run: |
-          ./readme_edit.sh
+#       - name: Edit README
+#         if: steps.fetch_changes.outputs.changed == 'true'
+#         shell: bash
+#         run: |
+#           ./readme_edit.sh
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
