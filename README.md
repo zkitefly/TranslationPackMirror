@@ -2,7 +2,7 @@
 
 ## 下载地址：
 
-*注：使用到 ghproxy.net& zzko.cn CDN & github.io & staticaly.com & iqiq.io 加速。*
+*注：使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io 加速。*
 
 ——
 
