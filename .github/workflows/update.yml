@@ -17,7 +17,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '==================================================='
-          wget --random-wait --continue -d -N -t 10 -i 'http://downloader.meitangdehulu.com/'
+          wget --random-wait --continue -d -N -t 10 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm 'index.html'
           echo '==================================================='
           git add -A
