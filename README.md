@@ -2,51 +2,51 @@
 
 ## 下载地址：
 
-*注：使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io 加速。*
+*注：下方的地址使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io 加速。*
 
 ——
 
 #### ☆
 
-**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
+**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/ + [本仓库所含的 zip 文件](/files)**
 
 例如：
 
-**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——
 
-**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
+**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/ + [本仓库所含的 zip 文件](/files)**
 
 例如：
 
-**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——
 
 *注：不支持下载 MD5 校验文件。*
 
-**https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/ + 本仓库所含的 zip 文件**
+**https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/files/ + [本仓库所含的 zip 文件](/files)**
 
 例如：
 
-**https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——
 
-**https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/ + 本仓库所含的 zip 文件**
+**https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/files/ + [本仓库所含的 zip 文件](/files)**
 
 例如：
 
-**https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——
 
-**https://zkitefly.github.io/I18nUpdateMod-resources/ + 本仓库所含的文件**
+**https://zkitefly.github.io/I18nUpdateMod-resources/files/ + [本仓库所含的 zip 文件](/files)**
 
 例如：
 
-**https://zkitefly.github.io/I18nUpdateMod-resources/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://zkitefly.github.io/I18nUpdateMod-resources/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ## 下载地址延迟对比
 
@@ -76,22 +76,22 @@
 
 使用 wget 下载资源
 
-*https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 539 KB/s  用时 7.2s
 
-*https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://jsd.cdn.zzko.cn/gh/zkitefly/I18nUpdateMod-resources@main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 2.00MB/s  用时 1.9s
 
-*https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 664 KB/s  用时 5.9s
 
-*https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://raw.iqiq.io/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 786 KB/s  用时 5.0s
 
-*https://zkitefly.github.io/I18nUpdateMod-resources/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://zkitefly.github.io/I18nUpdateMod-resources/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 668 KB/s  用时 5.8s
