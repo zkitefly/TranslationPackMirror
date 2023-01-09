@@ -23,7 +23,7 @@ jobs:
           wget --continue -d -N --no-proxy --no-use-server-timestamps -t 50 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm 'index.html'
           echo '==================================================='
-          git add .
+          git add -A
           if git diff-index --quiet HEAD; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT
@@ -35,6 +35,15 @@ jobs:
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
           fi
+      - name: Edit README
+        if: steps.fetch_changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          cp './readme_template.txt' './tmp.txt'
+          ls >> './tmp.txt'
+          echo '```' >> './tmp.txt'
+          cp './tmp.txt' './README.md'
+          rm './tmp.txt'
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
