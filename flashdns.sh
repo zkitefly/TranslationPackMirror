@@ -1,3 +1,3 @@
-sudo systemctl is-active systemd-resolve.service
-sudo systemd-resolve --statistics
-sudo systemd-resolve --flush-caches
+sudo resolvectl statistics
+sudo resolvectl flush-caches
+sudo /etc/init.d/nscd restart
