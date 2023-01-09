@@ -44,8 +44,6 @@ jobs:
         shell: bash
         run: |
           echo 'push gitcode'
-          git config --global user.name "zkitefly"
-          git config --global user.email "z18344203426@qq.com"
-          git remote add gitcode https://chearlai@gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
           git remote -v
           git push -u gitcode main
