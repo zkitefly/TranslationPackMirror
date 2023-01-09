@@ -14,7 +14,7 @@
 
 例如：
 
-**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://cdn.staticaly.com/gh/zkitefly/I18nUpdateMod-resources/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——————————————
 
