@@ -12,9 +12,7 @@ jobs:
           echo '==================================================='
           # https://www.codenong.com/2-flush-clear-dns-cache-linux
           echo 'flushdns'
-          sudo systemctl is-active systemd-resolve.service
-          sudo systemd-resolve --statistics
-          sudo systemd-resolve --flush-caches
+          sudo './flashdns.sh'
           echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
