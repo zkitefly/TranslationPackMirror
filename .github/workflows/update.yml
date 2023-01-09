@@ -35,12 +35,7 @@ jobs:
         if: steps.fetch_changes.outputs.changed == 'true'
         shell: bash
         run: |
-          cp './readme_template.txt' './tmp.txt'
-          ls
-          ls >> './tmp.txt'
-          echo '```' >> './tmp.txt'
-          cp './tmp.txt' './README.md'
-          rm './tmp.txt'
+          ./readme_edit.sh
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
