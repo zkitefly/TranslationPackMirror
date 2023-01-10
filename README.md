@@ -28,7 +28,7 @@
 
 ### **☆推荐**
 
-**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](/files)**
+**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
@@ -38,7 +38,7 @@
 
 ——————————————
 
-**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](/files)**
+**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
@@ -46,7 +46,7 @@
 
 ——————————————
 
-**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](/files)**
+**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
@@ -56,7 +56,7 @@
 
 *注：不支持下载 MD5 校验文件。*
 
-**https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/ + [本仓库所含的 zip 文件](/files)**
+**https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
@@ -64,7 +64,7 @@
 
 ——————————————
 
-**https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](/files)**
+**https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
@@ -72,7 +72,7 @@
 
 ——————————————
 
-**https://zkitefly.github.io/TranslationPackMirror/files/ + [本仓库所含的 zip 文件](/files)**
+**https://zkitefly.github.io/TranslationPackMirror/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
