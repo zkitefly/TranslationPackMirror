@@ -1,12 +1,6 @@
 name: update_resources
-on:
- pull_request:
-    branches:
-    - main
- schedule:
-   - cron: '0 * * * *'
- repository_dispatch:
-   types: [update_resources]
+
+on: [push, pull_request]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
