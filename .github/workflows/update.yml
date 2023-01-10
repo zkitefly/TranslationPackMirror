@@ -1,12 +1,5 @@
 name: update_resources
-on:
- pull_request:
-    branches:
-    - main
- schedule:
-   - cron: '0 * * * *'
- repository_dispatch:
-   types: [update_resources]
+on: [push, pull_request]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
@@ -16,14 +9,13 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          echo '==================================================='
-          echo 'flushdns'
+          echo '====================flushdns======================='
           sudo './flashdns.sh'
           echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          echo '==================================================='
+          echo '=================flashresources===================='
           wget --random-wait --continue -d -N -t 10 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm 'index.html'
           echo '==================================================='
