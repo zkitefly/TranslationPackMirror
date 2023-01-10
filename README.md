@@ -24,8 +24,6 @@
 
 [**本仓库所含的 zip 文件**](/files)
 
-——————————————
-
 ### **☆推荐**
 
 **https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
