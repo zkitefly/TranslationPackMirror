@@ -26,21 +26,21 @@
 
 ### **☆推荐**
 
-**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
-
-例如：
-
-**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
-
-### 其他
-
-——————————————
-
 **https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
 **https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+
+### 其他
+
+——————————————
+
+**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+
+例如：
+
+**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——————————————
 
