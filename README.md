@@ -4,9 +4,9 @@
 
 该项目的目的是解决模组作者不接收翻译、翻译更新速度慢等诸多问题。
 
-**本仓库为  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 的非官方镜像源，自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载**
+**本仓库为  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 的非官方镜像源，**
 
-**每小时检查更新**
+**自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。每一小时检查一次更新。**
 
 ## 下载地址：
 
@@ -18,9 +18,11 @@
 
 ### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
 
-下载完后，启动游戏并在 选项 -- 资源包 中添加资源包（后缀对应支持的 MC 版本和 Modloader 类型）。
+### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
 
-若资源包不生效，请检查资源包的优先级。
+### 下载完后，启动游戏并在 “选项” -> “资源包” 中添加资源包。
+
+### 若资源包不生效，请检查资源包的优先级。
 
 |
 

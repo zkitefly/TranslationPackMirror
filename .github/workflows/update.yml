@@ -1,5 +1,12 @@
 name: update_resources
-on: [push, pull_request]
+on:
+ pull_request:
+    branches:
+    - main
+ schedule:
+   - cron: '0 * * * *'
+ repository_dispatch:
+   types: [update_resources]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
@@ -10,7 +17,20 @@ jobs:
         shell: bash
         run: |
           echo '====================flushdns======================='
-          sudo './flashdns.sh'
+          echo '1cat '/etc/resolv.conf''
+          cat '/etc/resolv.conf'
+          echo '2echo "nameserver 114.114.114.114
+          nameserver 8.8.8.8">'/etc/resolv.conf''
+          echo "nameserver 114.114.114.114
+          nameserver 8.8.8.8">'/etc/resolv.conf'
+          echo '3cat '/etc/resolv.conf''
+          cat '/etc/resolv.conf'
+          echo '4sudo systemctl restart systemd-resolved'
+          sudo systemctl restart systemd-resolved
+          echo '5sudo resolvectl statistics'
+          sudo resolvectl statistics
+          echo '6sudo resolvectl flush-caches'
+          sudo resolvectl flush-caches
           echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
@@ -30,22 +50,9 @@ jobs:
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
           fi
-#       - name: Edit README
-#         if: steps.fetch_changes.outputs.changed == 'true'
-#         shell: bash
-#         run: |
-#           ./readme_edit.sh
       - name: Push changes
         if: steps.fetch_changes.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-#      - name: Push changes to GitCode
-#         if: steps.fetch_changes.outputs.changed == 'true'
-#         shell: bash
-#         run: |
-#           echo 'push gitcode'
-#           git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-#           git remote -v
-#           git push -u gitcode main
