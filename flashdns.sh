@@ -1,8 +1,5 @@
-echo '--'
 cat '/etc/resolv.conf'
-echo '--'
 sudo systemctl restart systemd-resolved
-echo '--'
 sudo resolvectl statistics
-echo '--'
 sudo resolvectl flush-caches
+# 此脚本用于刷新 github-action 中的dns缓存。
