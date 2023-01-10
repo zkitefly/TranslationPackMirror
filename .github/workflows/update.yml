@@ -1,8 +1,5 @@
 name: update_resources
 on:
- push:
-    branches:
-    - main
  pull_request:
     branches:
     - main
