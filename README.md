@@ -6,6 +6,20 @@
 
 ## 下载地址：
 
+|
+
+|
+
+|
+
+### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
+
+|
+
+|
+
+|
+
 *注：下方的地址使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io & ghproxy.com加速。*
 
 [**本仓库所含的 zip 文件**](/files)
