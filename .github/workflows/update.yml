@@ -1,12 +1,5 @@
 name: update_resources
-on:
- pull_request:
-    branches:
-    - main
- schedule:
-   - cron: '0 * * * *'
- repository_dispatch:
-   types: [update_resources]
+on: [push, pull_request]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
@@ -23,8 +16,8 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '=================flashresources===================='
-          wget --no-dns-cache --random-wait --continue -d -N -T 60 -t 30 -i 'http://downloader1.meitangdehulu.com:22943/'
-          rm 'index.html'
+          wget --convert-links --no-dns-cache --random-wait --continue -d -N -T 60 -t 30 -i 'http://downloader1.meitangdehulu.com:22943/'
+          # rm 'index.html'
           echo '==================================================='
           git add -A
           if git diff-index --quiet HEAD; then
