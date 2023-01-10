@@ -3,7 +3,7 @@ echo '1——————————'
 cat '/etc/resolv.conf'
 echo '2——————————'
 echo "nameserver 114.114.114.114
-nameserver 8.8.8.8">'/etc/resolv.conf'
+nameserver 8.8.8.8">>'/etc/resolv.conf'
 echo '3——————————'
 cat '/etc/resolv.conf'
 echo '4——————————'
