@@ -1,6 +1,6 @@
 # TranslationPackMirror
 
-**本仓库自动从 `http://downloader1.meitangdehulu.com:22943/` 获取资源并由下面的地址分发下载**
+**本仓库自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载**
 
 **每小时检查更新**
 
