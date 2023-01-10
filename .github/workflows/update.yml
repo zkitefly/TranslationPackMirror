@@ -6,7 +6,8 @@ on:
  schedule:
    - cron: '0 * * * *'
  repository_dispatch:
-   types: [update_resources]jobs:
+   types: [update_resources]
+jobs:
   update_resources:
     runs-on: ubuntu-latest
     steps:
