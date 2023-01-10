@@ -1,12 +1,5 @@
 name: update_resources
-on:
- pull_request:
-    branches:
-    - main
- schedule:
-   - cron: '0 * * * *'
- repository_dispatch:
-   types: [update_resources]
+on: [push, pull_request]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
@@ -17,20 +10,7 @@ jobs:
         shell: bash
         run: |
           echo '====================flushdns======================='
-          echo '1cat '/etc/resolv.conf''
-          cat '/etc/resolv.conf'
-          echo '2echo "nameserver 114.114.114.114
-          nameserver 8.8.8.8">'/etc/resolv.conf''
-          echo "nameserver 114.114.114.114
-          nameserver 8.8.8.8">'/etc/resolv.conf'
-          echo '3cat '/etc/resolv.conf''
-          cat '/etc/resolv.conf'
-          echo '4sudo systemctl restart systemd-resolved'
-          sudo systemctl restart systemd-resolved
-          echo '5sudo resolvectl statistics'
-          sudo resolvectl statistics
-          echo '6sudo resolvectl flush-caches'
-          sudo resolvectl flush-caches
+          sudo './flashdns.sh'
           echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
