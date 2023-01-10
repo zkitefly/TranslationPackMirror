@@ -1,5 +1,5 @@
 name: update_resources
-on:[push, pull_request]
+on: [push, pull_request]
 jobs:
   update_resources:
     runs-on: ubuntu-latest
