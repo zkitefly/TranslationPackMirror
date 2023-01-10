@@ -26,21 +26,21 @@
 
 ### **☆推荐**
 
-**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
-
-例如：
-
-**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
-
-### 其他
-
-——————————————
-
 **https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
 **https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+
+### 其他
+
+——————————————
+
+**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+
+例如：
+
+**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ——————————————
 
@@ -84,37 +84,37 @@
 
 *https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 3.07 MB/s  用时 1.2s
+平均 5.22 MB/s  用时 0.7s
 
 ——————————————
 
 *https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 946 KB/s  用时 4.1s
+平均 8.61 MB/s  用时 0.4s
 
 ——————————————
 
 *https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 5.29 MB/s 用时 0.7s
+平均 2.05 MB/s 用时 1.9s
 
 ——————————————
 
 *https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 3.74 MB/s  用时 1.0s
+平均 10.1 MB/s  用时 0.4s
 
 ——————————————
 
 *https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 3.20 MB/s  用时 1.2s
+平均 9.59 MB/s  用时 0.4s
 
 ——————————————
 
 *https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 3.19 MB/s  用时 1.2s
+平均 10.3 MB/s  用时 0.4s
 
 ## 下载地址延迟对比
 
