@@ -6,22 +6,6 @@
 
 |
 
- [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 是 Minecraft 模组简体中文翻译项目的仓库。
-
-该项目的目的是解决模组作者不接收翻译、翻译更新速度慢等诸多问题。
-
-**本仓库为 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 的非官方镜像源，**
-
-**自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。每一小时检查一次更新。**
-
-## 下载地址：
-
-|
-
-|
-
-|
-
 ### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
 
 ### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
