@@ -1,11 +1,5 @@
 # TranslationPackMirror
 
-|
-
-|
-
-|
-
  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 是 Minecraft 模组简体中文翻译项目的仓库。
 
 该项目的目的是解决模组作者不接收翻译、翻译更新速度慢等诸多问题。
@@ -13,6 +7,10 @@
 **本仓库为 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 的非官方镜像源，**
 
 **自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。每一小时检查一次更新。**
+
+## 协议
+
+本仓库采用 [知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)（[简体中文](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)） 进行许可，协议全文可在 [此处](./LICENSE) 查看。
 
 ## 下载地址：
 
@@ -22,13 +20,15 @@
 
 |
 
-### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
+### **目前 [自动汉化更新非长期支持版](https://www.mcmod.cn/class/8067.html) 模组使用本仓库为镜像源，该模组会在玩家打开游戏时会自动下载本仓库的资源包随后自动装载上，并切换语言为简体中文，以此实现对游戏内容的汉化。可以前往模组页面下载模组。**
 
-### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
+#### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
 
-### 下载完后，启动游戏并在 “选项” -> “资源包” 中添加资源包。
+#### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
 
-### 若资源包不生效，请检查资源包是否与你的客户端（服务端无效）同 MC 版本以及 Modloader 类型（也就是Forge、Fabric等），或尝试调整资源包的优先级。
+#### 下载完后，启动游戏并在 “选项” -> “资源包” 中添加资源包。
+
+#### 若资源包不生效，请检查资源包是否与你的客户端（服务端无效）同 MC 版本以及 Modloader 类型（也就是Forge、Fabric等），或尝试调整资源包的优先级。
 
 |
 
