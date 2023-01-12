@@ -6,8 +6,10 @@ on:
     branches: [main]
     paths: 
       - '.github/workflows/update.yml'
- schedule:
-   - cron: '0 * * * *'
+    # 定时触发
+  schedule:
+    # 每1小时获取一次
+    - cron: '0 */2 * * *'
  repository_dispatch:
    types: [update_resources]
 
@@ -16,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set time
+        shell: bash
+        run: |
+          sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: Fetch resources changes
         id: fetch_changes
         shell: bash
