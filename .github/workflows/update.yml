@@ -18,7 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: set time
-        if: steps.check_updata.outputs.changed == 'true'
         shell: bash
         run: |
           sudo timedatectl set-timezone 'Asia/Shanghai'
