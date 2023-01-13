@@ -55,19 +55,13 @@ jobs:
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
           echo '==================================================='
           git add -A
-          if git diff-index --quiet HEAD; then
-            # No changes
-            echo 'changed=false' >> $GITHUB_OUTPUT
-          else
-            # Changes detected
-            echo 'changed=true' >> $GITHUB_OUTPUT
-            git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）
+          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
           fi
       - name: Push changes
-        if: steps.fetch_changes.outputs.changed == 'true'
+        if: steps.check_updata.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
