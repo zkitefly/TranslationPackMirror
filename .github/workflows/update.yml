@@ -17,6 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: set time
+        if: steps.check_updata.outputs.changed == 'true'
+        shell: bash
+        run: |
+          sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: flash dns
         shell: bash
         run: |
@@ -36,11 +41,6 @@ jobs:
             md5sum index.txt > md5.md5
           fi
           echo '============================================================'
-      - name: set time
-        if: steps.check_updata.outputs.changed == 'true'
-        shell: bash
-        run: |
-          sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: Fetch resources changes
         if: steps.check_updata.outputs.changed == 'true'
         id: fetch_changes
