@@ -8,7 +8,7 @@ on:
     paths: 
       - '.github/workflows/update.yml'
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */1 * * *'
   repository_dispatch:
     types: [update_resources]
 
@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           sudo './flashdns.sh'
-      - name: check_updata
+      - name: check updata
         id: check_updata
         shell: bash
         run: |
