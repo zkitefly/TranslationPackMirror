@@ -26,14 +26,14 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O link.txt "http://downloader1.meitangdehulu.com:22943/"
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader1.meitangdehulu.com:22943/"
           if md5sum -c --quiet 'md5.md5'; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
             echo 'changed=true' >> $GITHUB_OUTPUT
-            md5sum link.txt > md5.md5
+            md5sum index.txt > md5.md5
           fi
           echo '============================================================'
       - name: set time
