@@ -55,7 +55,7 @@ jobs:
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
           echo '==================================================='
           git add -A
-          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）
+          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
