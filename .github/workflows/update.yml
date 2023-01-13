@@ -17,22 +17,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: flash dns
+        shell: bash
+        run: |
+          sudo './flashdns.sh'
+      - name: check_updata
+        id: check_updata
+        shell: bash
+        run: |
+          echo '========================== 检查区 ==========================='
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O link.txt "http://downloader1.meitangdehulu.com:22943/"
+          if md5sum -c --quiet 'md5.md5'; then
+            # No changes
+            echo 'changed=false' >> $GITHUB_OUTPUT
+          else
+            # Changes detected
+            echo 'changed=true' >> $GITHUB_OUTPUT
+            md5sum link.txt > md5.md5
+          fi
+          echo '============================================================'
       - name: set time
+        if: steps.check_updata.outputs.changed == 'true'
         shell: bash
         run: |
           sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: Fetch resources changes
+        if: steps.check_updata.outputs.changed == 'true'
         id: fetch_changes
         shell: bash
         run: |
-          echo '====================flushdns======================='
-          sudo './flashdns.sh'
-          echo '==================================================='
           cd './files'
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '=================flashresources===================='
-          wget --no-dns-cache --random-wait -d -N -T 60 -t 30 -i 'http://downloader1.meitangdehulu.com:22943/'
+          wget --no-dns-cache --random-wait -d -T 60 -t 30 -i 'http://downloader1.meitangdehulu.com:22943/'
           echo '==================================================='
           git add -A
           if git diff-index --quiet HEAD; then
