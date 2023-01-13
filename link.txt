@@ -1,0 +1,16 @@
+<html>
+<head><title>Index of /</title></head>
+<body bgcolor="white">
+<h1>Index of /</h1><hr><pre><a href="../">../</a>
+<a href="1.12.2.md5">1.12.2.md5</a>                                         12-Jan-2023 15:00                  32
+<a href="1.16-fabric.md5">1.16-fabric.md5</a>                                    12-Jan-2023 15:00                  32
+<a href="1.16.md5">1.16.md5</a>                                           12-Jan-2023 15:00                  32
+<a href="1.18-fabric.md5">1.18-fabric.md5</a>                                    12-Jan-2023 15:00                  32
+<a href="1.18.md5">1.18.md5</a>                                           12-Jan-2023 15:00                  32
+<a href="Minecraft-Mod-Language-Modpack-1-16-Fabric.zip">Minecraft-Mod-Language-Modpack-1-16-Fabric.zip</a>     12-Jan-2023 15:00              263833
+<a href="Minecraft-Mod-Language-Modpack-1-16.zip">Minecraft-Mod-Language-Modpack-1-16.zip</a>            12-Jan-2023 15:00             3999668
+<a href="Minecraft-Mod-Language-Modpack-1-18-Fabric.zip">Minecraft-Mod-Language-Modpack-1-18-Fabric.zip</a>     12-Jan-2023 15:00              301816
+<a href="Minecraft-Mod-Language-Modpack-1-18.zip">Minecraft-Mod-Language-Modpack-1-18.zip</a>            12-Jan-2023 15:00             3425776
+<a href="Minecraft-Mod-Language-Modpack.zip">Minecraft-Mod-Language-Modpack.zip</a>                 12-Jan-2023 15:00             6878349
+</pre><hr></body>
+</html>
