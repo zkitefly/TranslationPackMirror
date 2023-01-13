@@ -8,6 +8,8 @@
 
 **自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。每一小时检查一次更新。**
 
+**本仓库不接收任何模组翻译，模组翻译上传请前往 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/pulls) 进行提交**
+
 ## 协议
 
 本仓库采用 [知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)（[简体中文](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)） 进行许可，协议全文可在 [此处](./LICENSE) 查看。
