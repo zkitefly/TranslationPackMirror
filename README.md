@@ -1,6 +1,6 @@
 # TranslationPackMirror
 
-[**GitHub**](https://github.com/zkitefly/TranslationPackMirror) · [**GitCode**](https://gitcode.net/chearlai/TranslationPackMirror)
+[**GitHub**](https://github.com/zkitefly/TranslationPackMirror) · [**GitCode**](https://gitcode.net/chearlai/translationpackmirror)
 
  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 是 Minecraft 模组简体中文翻译项目的仓库。
 
@@ -56,11 +56,11 @@
 
 ### **☆推荐☆**
 
-**https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+**https://gitcode.net/chearlai/translationpackmirror/-/raw/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
-**https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://gitcode.net/chearlai/translationpackmirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ### 其他
 
@@ -118,7 +118,7 @@ https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Mo
 
 ☆
 
-*https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
+*https://gitcode.net/chearlai/translationpackmirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
 平均 28.2 MB/s  用时 0s
 
