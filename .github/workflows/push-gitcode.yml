@@ -26,7 +26,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
       - name: Update fork
         run: |
-          echo "${{ secrets.SSHKEY }}" > ~/.ssh/gitcode
+          echo "${{ secrets.SSHKEY }}" > /home/runner/.ssh/gitcode
           git remote add gitcode ${{ env.repoUrl }}
           git remote -v
           # git fetch origin
