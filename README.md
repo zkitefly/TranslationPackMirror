@@ -22,9 +22,17 @@
 
 |
 
+——————————————
+
+- 自动：
+
 ### **目前 [自动汉化更新非长期支持版](https://www.mcmod.cn/class/8067.html) 模组使用本仓库为镜像源，该模组会在玩家打开游戏时会自动下载本仓库的资源包随后自动装载上，并切换语言为简体中文，以此实现对游戏内容的汉化。可以前往模组页面下载模组。**
 
-#### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files](https://zkitefly.github.io/TranslationPackMirror/files)**
+——————————————
+
+- 手动：
+
+#### **普通用户请到此处下载：[https://translationpackmirror.pages.dev/files/](https://translationpackmirror.pages.dev/files/)**
 
 #### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
 
@@ -32,71 +40,85 @@
 
 #### 若资源包不生效，请检查资源包是否与你的客户端（服务端无效）同 MC 版本以及 Modloader 类型（也就是Forge、Fabric等），或尝试调整资源包的优先级。
 
-|
+——————————————
 
 |
 
 |
 
-*注：下方的地址使用到 ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io & ghproxy.com加速。*
+|
+
+*注：下方的地址使用到 gitcode.net & ghproxy.net & zzko.cn CDN & github.io & staticaly.com & iqiq.io & ghproxy.com加速。*
 
 [**本仓库所含的 zip 文件**](https://zkitefly.github.io/TranslationPackMirror/files)
 
-### **☆推荐**
+### **☆推荐☆**
 
-**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+**https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
 
 例如：
 
-**https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+**https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
 
 ### 其他
 
-——————————————
-
-**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + 本仓库所含的 zip 文件
 
 例如：
 
-**https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+https://ghproxy.com/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip
 
 ——————————————
 
-**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)
 
 例如：
 
-**https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+https://cdn.staticaly.com/gh/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip
+
+——————————————
+
+https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)
+
+例如：
+
+https://ghproxy.net/https://raw.githubusercontent.com/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip
 
 ——————————————
 
 *注：不支持下载 MD5 校验文件。*
 
-**https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)
 
 例如：
 
-**https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+https://jsd.cdn.zzko.cn/gh/zkitefly/TranslationPackMirror@main/files/Minecraft-Mod-Language-Modpack-1-16.zip
 
 ——————————————
 
-**https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)
 
 例如：
 
-**https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+https://raw.iqiq.io/zkitefly/TranslationPackMirror/main/files/Minecraft-Mod-Language-Modpack-1-16.zip
 
 ——————————————
 
-**https://zkitefly.github.io/TranslationPackMirror/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)**
+https://zkitefly.github.io/TranslationPackMirror/files/ + [本仓库所含的 zip 文件](https://github.com/zkitefly/TranslationPackMirror/tree/main/files)
 
 例如：
 
-**https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Modpack-1-16.zip**
+https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Modpack-1-16.zip
 
 ## 下载速度对比（不严谨）
 
 使用 wget 下载资源
+
+☆
+
+*https://gitcode.net/chearlai/TranslationPackMirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
+
+平均 28.2 MB/s  用时 0s
 
 ——————————————
 
@@ -137,6 +159,10 @@
 ## 下载地址延迟对比
 
 测试平台：https://www.itdog.cn/ping
+
+*☆gitcode.net☆*
+
+![](https://api.onedrive.com/v1.0/shares/s!AiSrzi-vYVoBhCBXhWF2omNpPJP-/root/content)
 
 ——————————————
 
