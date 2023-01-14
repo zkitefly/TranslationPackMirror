@@ -9,16 +9,26 @@ on:
       - '.github/workflows/push-gitcode.yml'
 
 jobs:
-  push-gitcode:
+  sync:
     runs-on: ubuntu-latest
+    env:
+      repoUrl: https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+      repoBranch: master
     steps:
-      - uses: actions/checkout@v3
-      - name: push-gitcode
-        shell: bash
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ env.repoBranch }}
+      - name: Set env
         run: |
-          git config --local user.name "mirror"
-          git filter-branch -f --env-filter "GIT_AUTHOR_NAME=admin_op" -- --all
-          git config --local user.email "${{ secrets.EMAIL }}"
-          git config --local user.password "${{ secrets.PASSWORD }}"
-          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
-          git push -u gitcode
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+      - name: Update fork
+        run: |
+          git remote add upstream ${{ env.repoUrl }}
+          git remote -v
+          git fetch upstream
+          git checkout ${{ env.repoBranch }}
+          git merge upstream/${{ env.repoBranch }}
+          git push origin ${{ env.repoBranch }}
