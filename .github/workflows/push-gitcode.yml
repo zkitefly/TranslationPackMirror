@@ -16,7 +16,7 @@ jobs:
       - name: push-gitcode
         shell: bash
         run: |
-          git config --local user.name "${{ secrets.EMAIL }}"
+          git config --local user.name "zkitefly"
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.password "${{ secrets.PASSWORD }}"
           git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
