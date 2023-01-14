@@ -26,9 +26,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
       - name: Update fork
         run: |
-          git remote add upstream ${{ env.repoUrl }}
+          git remote add gitcode ${{ env.repoUrl }}
           git remote -v
-          git fetch upstream
+          # git fetch origin
           git checkout ${{ env.repoBranch }}
-          git merge upstream/${{ env.repoBranch }}
-          git push origin ${{ env.repoBranch }}
+          # git merge origin/${{ env.repoBranch }}
+          git push gitcode ${{ env.repoBranch }}
