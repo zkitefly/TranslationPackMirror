@@ -1,5 +1,7 @@
 # TranslationPackMirror
 
+![](https://github.githubassets.com/images/icons/emoji/tada.png)
+
 [**GitHub**](https://github.com/zkitefly/TranslationPackMirror) · [**GitCode**](https://gitcode.net/chearlai/translationpackmirror)
 
  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 是 Minecraft 模组简体中文翻译项目的仓库。
