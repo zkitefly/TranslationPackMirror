@@ -1,5 +1,7 @@
 # TranslationPackMirror
 
+[**GitHub**](https://github.com/zkitefly/TranslationPackMirror) · [**GitCode**](https://gitcode.net/chearlai/TranslationPackMirror)
+
  [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 是 Minecraft 模组简体中文翻译项目的仓库。
 
 该项目的目的是解决模组作者不接收翻译、翻译更新速度慢等诸多问题。
