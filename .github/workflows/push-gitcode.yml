@@ -17,6 +17,7 @@ jobs:
         shell: bash
         run: |
           git config --local user.name "zkitefly"
+          git filter-branch -f --env-filter "GIT_AUTHOR_NAME=admin_op" -- --all
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.password "${{ secrets.PASSWORD }}"
           git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
