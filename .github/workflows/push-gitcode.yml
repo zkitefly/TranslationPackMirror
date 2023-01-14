@@ -9,10 +9,10 @@ on:
       - '.github/workflows/push-gitcode.yml'
 
 jobs:
-  sync:
+  push_gitcode:
     runs-on: ubuntu-latest
     env:
-      repoUrl: https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+      repoUrl: git@gitcode.net:chearlai/TranslationPackMirror.git
       repoBranch: main
     steps:
       - name: Checkout
@@ -29,6 +29,6 @@ jobs:
           git remote add gitcode ${{ env.repoUrl }}
           git remote -v
           # git fetch origin
-          git checkout ${{ env.repoBranch }}
+          # git checkout ${{ env.repoBranch }}
           # git merge origin/${{ env.repoBranch }}
           git push gitcode ${{ env.repoBranch }}
