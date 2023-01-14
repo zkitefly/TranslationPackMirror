@@ -1,0 +1,20 @@
+name: Push GitCode
+
+on: 
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths: 
+      - '.github/workflows/push-gitcode.yml'
+
+jobs:
+  push-gitcode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: push-gitcode
+        shell: bash
+        run: |
+          git remote add gitcode https://gitcode.net/chearlai/I18nUpdateMod-resources.git
+          git push -u gitcode
