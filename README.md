@@ -122,7 +122,7 @@ https://zkitefly.github.io/TranslationPackMirror/files/Minecraft-Mod-Language-Mo
 
 *https://gitcode.net/chearlai/translationpackmirror/-/raw/main/files/Minecraft-Mod-Language-Modpack-1-16.zip*
 
-平均 28.2 MB/s  用时 0s
+平均 6.20 MB/s  用时 0.6s
 
 ——————————————
 
