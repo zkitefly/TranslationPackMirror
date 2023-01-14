@@ -9,27 +9,15 @@ on:
       - '.github/workflows/push-gitcode.yml'
 
 jobs:
-  push_gitcode:
+  to_gitlab:
     runs-on: ubuntu-latest
-    env:
-      repoUrl: git@gitcode.net:chearlai/TranslationPackMirror.git
-      repoBranch: main
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    steps:                                              # <-- must use actions/checkout before mirroring!
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: ${{ env.repoBranch }}
-      - name: Set env
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-      - name: Update fork
-        run: |
-          echo "${{ secrets.SSHKEY }}" > /home/runner/.ssh/gitcode
-          git remote add gitcode ${{ env.repoUrl }}
-          git remote -v
-          # git fetch origin
-          # git checkout ${{ env.repoBranch }}
-          # git merge origin/${{ env.repoBranch }}
-          git push gitcode ${{ env.repoBranch }}
+      - uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url:
+            git@gitcode.net:chearlai/TranslationPackMirror.git
+          ssh_private_key:                              # <-- use 'secrets' to pass credential information.
+            ${{ secrets.SSHKEY }}
