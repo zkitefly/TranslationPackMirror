@@ -30,14 +30,14 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader1.meitangdehulu.com:22943/"
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.txt "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/latest"
           if md5sum -c --quiet 'md5.md5'; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
             echo 'changed=true' >> $GITHUB_OUTPUT
-            md5sum index.txt > md5.md5
+            md5sum latest.txt > md5.md5
           fi
           echo '============================================================'
       - name: Fetch resources changes
@@ -45,19 +45,41 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          cd './files'
+          echo '=================flashresources===================='
+          # 获取 Latest Releases HTML URL
+          latest_releases_HTML-URL=$(cat "latest.txt" | jq -r ".assets[]" | jq -r '.name')
+          # 获取要更新文件的名称
+          updata_filename=$(cat "latest.txt" | jq -r ".assets[]" | jq -r '.name')
+          # 获取下载资源地址
+          cat "latest.txt" | jq -r ".assets[]"".browser_download_url" > download.txt
+          # 下载资源
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -i "download.txt"
+          # 校验 md5 值
+          md5sum -b *.zip > zip-md5.txt
+          md51=$(sed -n "1p" zip-md5.txt)  # PS: 我这么做就是因为我水平太差，不知道怎样更优雅写（  ——zkitefly
+          md52=$(sed -n "2p" zip-md5.txt)
+          md53=$(sed -n "3p" zip-md5.txt)
+          md54=$(sed -n "4p" zip-md5.txt)
+          md55=$(sed -n "5p" zip-md5.txt)
+          md56=$(sed -n "6p" zip-md5.txt)
+          md57=$(sed -n "8p" zip-md5.txt)
+          md58=$(sed -n "9p" zip-md5.txt)
+          mkdir "tmp"
+          cd "./tmp"
+
+          # 移动文件至 files 文件夹，同名文件覆盖
+          mv *.zip ./files
+          mv *.md5 ./files
+          echo '==================================================='
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          echo '=================flashresources===================='
-          shopt -s extglob
-          rm -f !(README.md)
-          wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
-          rm "index.html.1"
-          echo '==================================================='
           git add -A
           git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
 
+          Latest Releases: ${latest_releases_HTML-URL}
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
+          Updata:
+          ${updata_filename}
             "
       - name: Push changes
         if: steps.check_updata.outputs.changed == 'true'
