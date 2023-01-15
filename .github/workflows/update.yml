@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader.meitangdehulu.com"
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader1.meitangdehulu.com:22943/"
           if md5sum -c --quiet 'md5.md5'; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT
@@ -51,7 +51,7 @@ jobs:
           echo '=================flashresources===================='
           shopt -s extglob
           rm -f !(README.md)
-          wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader.meitangdehulu.com'
+          wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm "index.html.1"
           echo '==================================================='
           git add -A
