@@ -36,7 +36,7 @@
 
 - 手动：
 
-#### **普通用户请到此处下载：[https://translationpackmirror.pages.dev/files/](https://translationpackmirror.pages.dev/files/)**
+#### **普通用户请到此处下载：[https://zkitefly.github.io/TranslationPackMirror/files/](https://zkitefly.github.io/TranslationPackMirror/files/)**
 
 #### 下载时请留意文件后缀对应支持的 MC 版本和 Modloader（也就是Forge、Fabric等）类型。
 
