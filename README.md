@@ -10,7 +10,9 @@
 
 **本仓库为 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package) 的非官方镜像源，**
 
-**会自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。每一小时检查一次更新。**
+**会自动从 http://downloader1.meitangdehulu.com:22943/ 获取资源并由下面的地址分发下载。~每一小时检查一次更新。~**
+
+**更新频率拉低至 21:00 and 21:59 UTC (04:00  and 04:59CST)**
 
 **本仓库不接收任何模组翻译，模组翻译上传请前往 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/pulls) 进行提交**
 
