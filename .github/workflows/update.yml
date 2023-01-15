@@ -8,7 +8,7 @@ on:
     paths: 
       - '.github/workflows/update.yml'
   schedule:
-    - cron: '0 0 20-22 * * ? *'
+    - cron: '0 0 20-22 * * *'
   repository_dispatch:
     types: [update_resources]
 
