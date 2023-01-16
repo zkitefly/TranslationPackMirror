@@ -16,9 +16,13 @@
 
 **本仓库不接收任何模组翻译，模组翻译上传请前往 [CFPAOrg/Minecraft-Mod-Language-Package](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/pulls) 进行提交**
 
+上传时请留意他们规章制度，且上传他们所支持的版本，若违反，本仓库概不负责
+
 ## 协议
 
 本仓库采用 [知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)（[简体中文](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)） 进行许可，协议全文可在 [此处](./LICENSE) 查看。
+
+意思是：用到仓库的要声明原仓库地址/名称，不得商业使用，如果基于本仓库做一个新的项目必须使用本协议。
 
 ## 下载地址：
 
