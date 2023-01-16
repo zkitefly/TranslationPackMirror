@@ -1,4 +1,4 @@
-name: update_resources
+name: Update resources
 
 on: 
   pull_request:
