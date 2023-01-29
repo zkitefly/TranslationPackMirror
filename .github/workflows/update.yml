@@ -78,8 +78,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '=================flashresources===================='
           shopt -s extglob
-          rm -f !(README.md)
-          rm -r 'github.com'
+          rm -r !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
           wget -c -np -p -k -E 'https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/issues/2444'
           rm "index.html.1"
