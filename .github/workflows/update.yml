@@ -70,7 +70,7 @@ jobs:
             "
       - name: Fetch resources changes2
         if: steps.check_updata.outputs.changed2 == 'true'
-        id: fetch_changes
+        id: fetch_changes2
         shell: bash
         run: |
           cd './files-2444'
