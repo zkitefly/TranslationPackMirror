@@ -39,6 +39,15 @@ jobs:
             echo 'changed=true' >> $GITHUB_OUTPUT
             md5sum index.txt > md5.md5
           fi
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index2.txt "https://cfpa.cyan.cafe/project-hex/"
+          if md5sum -c --quiet 'md52.md5'; then
+            # No changes
+            echo 'changed2=false' >> $GITHUB_OUTPUT
+          else
+            # Changes detected
+            echo 'changed2=true' >> $GITHUB_OUTPUT
+            md5sum index2.txt > md52.md5
+          fi
           echo '============================================================'
       - name: Fetch resources changes
         if: steps.check_updata.outputs.changed == 'true'
@@ -59,8 +68,29 @@ jobs:
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
+      - name: Fetch resources changes2
+        if: steps.check_updata.outputs.changed2 == 'true'
+        id: fetch_changes
+        shell: bash
+        run: |
+          cd './files-2444'
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          echo '=================flashresources===================='
+          shopt -s extglob
+          rm -f !(README.md)
+          rm -r 'github.com'
+          wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
+          wget -c -np -p -k -E https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/issues/2444
+          rm "index.html.1"
+          echo '==================================================='
+          git add -A
+          git commit -m "Update resources2（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
+
+          GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
+            "
       - name: Push changes
-        if: steps.check_updata.outputs.changed == 'true'
+        if: steps.check_updata.outputs.changed == 'true' || steps.check_updata.outputs.changed2 == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
