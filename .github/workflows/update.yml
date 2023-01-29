@@ -54,29 +54,13 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          cd './files'
-          ls
-          echo '=================flashresources===================='
-          shopt -s extglob
-          rm -f !(README.md)
-          wget --no-hsts --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
-          rm "index.html.1"
-          echo '==================================================='
-          ls
+          ./1.sh
       - name: Fetch resources changes2
         if: steps.check_updata.outputs.changed2 == 'true'
         id: fetch_changes2
         shell: bash
         run: |
-          cd './files-2444'
-          ls
-          echo '=================flashresources===================='
-          shopt -s extglob
-          rm -f !(README.md)
-          wget --no-hsts --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
-          rm "index.html.1"
-          echo '==================================================='
-          ls
+          ./2.sh
       - name: Commit
         if: steps.check_updata.outputs.changed == 'true' || steps.check_updata.outputs.changed2 == 'true'
         shell: bash
