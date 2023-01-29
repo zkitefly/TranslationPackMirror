@@ -63,7 +63,7 @@ jobs:
           echo '==================================================='
       - name: Fetch resources changes2
         if: steps.check_updata.outputs.changed2 == 'true'
-        id: fetch_changes2
+        id: fetch_changes22
         shell: bash
         run: |
           cd './files-2444'
