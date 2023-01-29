@@ -55,35 +55,32 @@ jobs:
         shell: bash
         run: |
           cd './files'
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '=================flashresources===================='
           shopt -s extglob
           rm -f !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm "index.html.1"
           echo '==================================================='
-          git add -A
-          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
-
-          GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
-            "
       - name: Fetch resources changes2
         if: steps.check_updata.outputs.changed2 == 'true'
         id: fetch_changes2
         shell: bash
         run: |
           cd './files-2444'
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           echo '=================flashresources===================='
           shopt -s extglob
           rm -r !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
-          ls
+          rm "index.html.1"
           echo '==================================================='
+      - name: Commit
+        if: steps.check_updata.outputs.changed == 'true' || steps.check_updata.outputs.changed2 == 'true'
+        shell: bash
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Update resources2（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
+          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
