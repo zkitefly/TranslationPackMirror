@@ -1,4 +1,4 @@
-name: Update resources
+name: Update resources2
 
 on: 
   pull_request:
@@ -6,9 +6,9 @@ on:
   push:
     branches: [main]
     paths: 
-      - '.github/workflows/update.yml'
+      - '.github/workflows/update2.yml'
   schedule:
-    - cron: '0 20-22 * * *' # Every hour, between 20:00 and 22:59, every day
+    - cron: '* 20-22 */3 * *' # Every minute, between 20:00 and 22:59, every 3 days
   repository_dispatch:
     types: [update_resources]
 
@@ -30,35 +30,35 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader1.meitangdehulu.com:22943/"
-          if md5sum -c --quiet 'md5.md5'; then
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index2.txt "https://cfpa.cyan.cafe/project-hex/"
+          if md5sum -c --quiet 'md52.md5'; then
             # No changes
-            echo 'changed=false' >> $GITHUB_OUTPUT
+            echo 'changed2=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
-            echo 'changed=true' >> $GITHUB_OUTPUT
-            md5sum index.txt > md5.md5
+            echo 'changed2=true' >> $GITHUB_OUTPUT
+            md5sum index2.txt > md52.md5
           fi
           echo '============================================================'
       - name: Fetch resources changes
-        if: steps.check_updata.outputs.changed == 'true'
-        id: fetch_changes
+        if: steps.check_updata.outputs.changed2 == 'true'
+        id: fetch_changes2
         shell: bash
         run: |
-          ./1.sh
+          ./2.sh
       - name: Commit
-        if: steps.check_updata.outputs.changed == 'true'
+        if: steps.check_updata.outputs.changed2 == 'true'
         shell: bash
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Update resources（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
+          git commit -m "Update resources2（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
 
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
       - name: Push changes
-        if: steps.check_updata.outputs.changed == 'true'
+        if: steps.check_updata.outputs.changed2 == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
