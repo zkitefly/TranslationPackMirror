@@ -31,22 +31,14 @@ jobs:
         run: |
           echo '========================== 检查区 ==========================='
           wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index.txt "http://downloader1.meitangdehulu.com:22943/"
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index2.txt "https://cfpa.cyan.cafe/project-hex/"
           if md5sum -c --quiet 'md5.md5'; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT
           else
             # Changes detected
             echo 'changed=true' >> $GITHUB_OUTPUT
-            md5sum index.txt > md5.md5
-          fi
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index2.txt "https://cfpa.cyan.cafe/project-hex/"
-          if md5sum -c --quiet 'md52.md5'; then
-            # No changes
-            echo 'changed2=false' >> $GITHUB_OUTPUT
-          else
-            # Changes detected
-            echo 'changed2=true' >> $GITHUB_OUTPUT
-            md5sum index2.txt > md52.md5
+            md5sum *.txt > md5.md5
           fi
           echo '============================================================'
       - name: Fetch resources changes
@@ -54,27 +46,24 @@ jobs:
         id: fetch_changes
         shell: bash
         run: |
-          cd './files'
           echo '=================flashresources===================='
+          # http://downloader1.meitangdehulu.com:22943/
+          cd './files'
           shopt -s extglob
           rm -f !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'http://downloader1.meitangdehulu.com:22943/'
           rm "index.html.1"
-          echo '==================================================='
-      - name: Fetch resources changes2
-        if: steps.check_updata.outputs.changed2 == 'true'
-        id: fetch_changes22
-        shell: bash
-        run: |
+          cd ../
+          # https://cfpa.cyan.cafe/project-hex/
           cd './files-2444'
-          echo '=================flashresources===================='
           shopt -s extglob
-          rm -r !(README.md)
+          rm -f !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
           rm "index.html.1"
+          cd ../
           echo '==================================================='
       - name: Commit
-        if: steps.check_updata.outputs.changed == 'true' || steps.check_updata.outputs.changed2 == 'true'
+        if: steps.check_updata.outputs.changed == 'true'
         shell: bash
         run: |
           git config --local user.name "github-actions[bot]"
@@ -85,7 +74,7 @@ jobs:
           GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
             "
       - name: Push changes
-        if: steps.check_updata.outputs.changed == 'true' || steps.check_updata.outputs.changed2 == 'true'
+        if: steps.check_updata.outputs.changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
