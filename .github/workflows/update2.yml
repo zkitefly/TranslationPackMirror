@@ -52,7 +52,8 @@ jobs:
           shopt -s extglob
           rm -f !(README.md)
           wget --no-dns-cache --random-wait -d -T 30 -t 60 -i 'https://cfpa.cyan.cafe/project-hex/'
-          rm "index.html.1"
+          wget -c -np -p -k -E https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/issues/2444
+          //rm "index.html.1"
           echo '==================================================='
           git add -A
           git commit -m "Update resources2（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
