@@ -2,23 +2,23 @@
 
 # Minecraft-Mod-Language-package-1.12.2-XXXXXX
 export "TNAME0=Minecraft-Mod-Language-package-1.12.2.zip$TNAME0"
-export "NAME0=Minecraft-Mod-Language-package-1.12.2-$NAME0"
+export "sNAME0=Minecraft-Mod-Language-package-1.12.2-$sNAME0"
 export "MD5NAME0=1.12.2.md5$MD5NAME0"
 # Minecraft-Mod-Language-package-1.16-XXXXXX
 export "TNAME1=Minecraft-Mod-Language-package-1.16.zip$TNAME1"
-export "NAME1=Minecraft-Mod-Language-package-1.16-$NAME1"
+export "sNAME1=Minecraft-Mod-Language-package-1.16-$sNAME1"
 export "MD5NAME1=1.16.md5$MD5NAME1"
 # Minecraft-Mod-Language-package-1.16-fabric-XXXXXX
 export "TNAME2=Minecraft-Mod-Language-package-1.16-fabric.zip$TNAME2"
-export "NAME2=Minecraft-Mod-Language-package-1.16-fabric-$NAME2"
+export "sNAME2=Minecraft-Mod-Language-package-1.16-fabric-$sNAME2"
 export "MD5NAME2=1.16-fabric.md5$MD5NAME2"
 # Minecraft-Mod-Language-package-1.18-XXXXXX
 export "TNAME3=Minecraft-Mod-Language-package-1.18.zip$TNAME3"
-export "NAME3=Minecraft-Mod-Language-package-1.18-$NAME3"
+export "sNAME3=Minecraft-Mod-Language-package-1.18-$sNAME3"
 export "MD5NAME3=1.18.md5$MD5NAME3"
 # Minecraft-Mod-Language-package-1.18-fabric-XXXXXX
 export "TNAME4=Minecraft-Mod-Language-package-1.18-fabric.zip$TNAME4"
-export "NAME4=Minecraft-Mod-Language-package-1.18-fabric-$NAME4"
+export "sNAME4=Minecraft-Mod-Language-package-1.18-fabric-$sNAME4"
 export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 
 ##########################################################################
@@ -28,11 +28,11 @@ export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 cd './files-2444'
 ls
 
-NAME0=$(find . -name "$NAME0"*)
-NAME1=$(find . -name "$NAME1"*)
-NAME2=$(find . -name "$NAME2"*)
-NAME3=$(find . -name "$NAME3"*)
-NAME4=$(find . -name "$NAME4"*)
+NAME0=$(find . -name "$sNAME0"*)
+NAME1=$(find . -name "$sNAME1"*)
+NAME2=$(find . -name "$sNAME2"*)
+NAME3=$(find . -name "$sNAME3"*)
+NAME4=$(find . -name "$sNAME4"*)
 
 md5sum "${NAME0}" > "$MD5NAME0"
 md5sum "${NAME0}" > "$MD5NAME1"
@@ -74,11 +74,11 @@ mv "$MD5NAME4" "files-2444-T"
 cd './files-2444'
 ls
 
-cp "$NAME0" "$TNAME0"
-cp "$NAME1" "$TNAME1"
-cp "$NAME2" "$TNAME2"
-cp "$NAME3" "$TNAME3"
-cp "$NAME4" "$TNAME4"
+cp "${NAME0}" "$TNAME0"
+cp "${NAME1}" "$TNAME1"
+cp "${NAME2}" "$TNAME2"
+cp "${NAME3}" "$TNAME3"
+cp "${NAME4}" "$TNAME4"
 
 mv "$TNAME0" ../
 mv "$TNAME1" ../
