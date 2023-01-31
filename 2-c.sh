@@ -21,18 +21,22 @@ export "TNAME4=Minecraft-Mod-Language-package-1.18-fabric.zip$TNAME4"
 export "sNAME4=Minecraft-Mod-Language-package-1.18-fabric-$sNAME4"
 export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 
-##########################################################################
+cd './files-2444'
+ls
 
+echo "注：如果后面有类似 1.16-fabric 的需要改搜索格式为 `*[^A-Z]`，没有则使用 `*[^1-6]`（我也不知道为什么，艹）"
+
+NAME0=$(find . -name "$sNAME0"*[^1-6].zip)
+NAME1=$(find . -name "$sNAME1"*[^1-6].zip)
+NAME2=$(find . -name "$sNAME2"*[^A-Z].zip) # 
+NAME3=$(find . -name "$sNAME3"*[^1-6].zip)
+NAME4=$(find . -name "$sNAME4"*[^A-Z].zip) # 
+
+cd ../
 
 ##################################MD5####################################
 cd './files-2444'
 ls
-
-NAME0=$(find . -name "$sNAME0"*)
-NAME1=$(find . -name "$sNAME1"*)
-NAME2=$(find . -name "$sNAME2"*)
-NAME3=$(find . -name "$sNAME3"*)
-NAME4=$(find . -name "$sNAME4"*)
 
 md5sum "${NAME0}" > "$MD5NAME0"
 md5sum "${NAME0}" > "$MD5NAME1"
@@ -58,6 +62,7 @@ sed -i 's\ \\g' "$MD5NAME2"
 sed -i 's\ \\g' "$MD5NAME3"
 sed -i 's\ \\g' "$MD5NAME4"
 
+rm *.txt
 mv *.md5 ../
 cd ../
 mv "$MD5NAME0" "files-2444-T"
@@ -86,6 +91,7 @@ mv "$TNAME2" ../
 mv "$TNAME3" ../
 mv "$TNAME4" ../
 
+cd ../
 mv *.zip files-2444-T
 
 ##########################################################################
