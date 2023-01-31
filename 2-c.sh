@@ -36,7 +36,8 @@ cd ../
 
 cd './files-2444-T'
 
-rm -f !(README.md)
+rm *.zip
+rm *.md5
 
 cd ../
 
