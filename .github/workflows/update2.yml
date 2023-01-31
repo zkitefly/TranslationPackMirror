@@ -40,12 +40,12 @@ jobs:
             md5sum index2.txt > md52.md5
           fi
           echo '============================================================'
-      - name: Fetch resources changes
-        if: steps.check_updata.outputs.changed2 == 'true'
-        id: fetch_changes2
-        shell: bash
-        run: |
-          ./2.sh
+#      - name: Fetch resources changes
+#        if: steps.check_updata.outputs.changed2 == 'true'
+#        id: fetch_changes2
+#        shell: bash
+#        run: |
+#          ./2.sh
       - name: Md5 and MV
         if: steps.check_updata.outputs.changed2 == 'true'
         id: md5
