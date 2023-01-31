@@ -1,23 +1,23 @@
 ##########################################################################
 
 # Minecraft-Mod-Language-package-1.12.2-XXXXXX
-export "TNAME0=Minecraft-Mod-Language-package-1.12.2.zip$TNAME0"
+export "TNAME0=Minecraft-Mod-Language-Modpack.zip$TNAME0"
 export "sNAME0=Minecraft-Mod-Language-package-1.12.2-$sNAME0"
 export "MD5NAME0=1.12.2.md5$MD5NAME0"
 # Minecraft-Mod-Language-package-1.16-XXXXXX
-export "TNAME1=Minecraft-Mod-Language-package-1.16.zip$TNAME1"
+export "TNAME1=Minecraft-Mod-Language-Modpack-1-16.zip$TNAME1"
 export "sNAME1=Minecraft-Mod-Language-package-1.16-$sNAME1"
 export "MD5NAME1=1.16.md5$MD5NAME1"
 # Minecraft-Mod-Language-package-1.16-fabric-XXXXXX
-export "TNAME2=Minecraft-Mod-Language-package-1.16-fabric.zip$TNAME2"
+export "TNAME2=Minecraft-Mod-Language-Modpack-1-16-Fabric.zip$TNAME2"
 export "sNAME2=Minecraft-Mod-Language-package-1.16-fabric-$sNAME2"
 export "MD5NAME2=1.16-fabric.md5$MD5NAME2"
 # Minecraft-Mod-Language-package-1.18-XXXXXX
-export "TNAME3=Minecraft-Mod-Language-package-1.18.zip$TNAME3"
+export "TNAME3=Minecraft-Mod-Language-Modpack-1-18.zip$TNAME3"
 export "sNAME3=Minecraft-Mod-Language-package-1.18-$sNAME3"
 export "MD5NAME3=1.18.md5$MD5NAME3"
 # Minecraft-Mod-Language-package-1.18-fabric-XXXXXX
-export "TNAME4=Minecraft-Mod-Language-package-1.18-fabric.zip$TNAME4"
+export "TNAME4=Minecraft-Mod-Language-Modpack-1.18-Fabric.zip$TNAME4"
 export "sNAME4=Minecraft-Mod-Language-package-1.18-fabric-$sNAME4"
 export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 
