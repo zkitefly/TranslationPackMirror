@@ -103,4 +103,28 @@ mv *.zip files-2444-T
 
 ##########################################################################
 
+####################################1.19##################################
+cd './files'
+
+cp 'Minecraft-Mod-Language-Modpack-1-19.zip' 'Minecraft-Mod-Language-Modpack-1-191.zip'
+cp '1.19.md5' '1.191.md5'
+
+mv 'Minecraft-Mod-Language-Modpack-1-191.zip' ../
+mv '1.191.md5' ../
+
+cd ../
+
+mv 'Minecraft-Mod-Language-Modpack-1-191.zip' 'files-2444-T'
+mv '1.191.md5' 'files-2444-T'
+
+cd './files-2444-T'
+
+cp 'Minecraft-Mod-Language-Modpack-1-191.zip' 'Minecraft-Mod-Language-Modpack-1-19.zip'
+cp '1.191.md5' '1.19.md5'
+
+rm 'Minecraft-Mod-Language-Modpack-1-191.zip'
+rm '1.191.md5'
+
+##########################################################################
+
 echo Done!
