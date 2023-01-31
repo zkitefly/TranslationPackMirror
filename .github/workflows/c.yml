@@ -8,7 +8,7 @@ on:
     paths: 
       - '.github/workflows/c.yml'
   schedule:
-    - cron: '0 20-22 */1 * *' # Every minute, between 20:00 and 22:59, every 7 days
+    - cron: '0 20-22 */1 * *' # Every minute, between 20:00 and 22:59, every days
   repository_dispatch:
     types: [update_resources]
 
