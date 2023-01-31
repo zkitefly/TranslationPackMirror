@@ -46,6 +46,12 @@ jobs:
         shell: bash
         run: |
           ./2.sh
+      - name: Md5 and MV
+        if: steps.check_updata.outputs.changed2 == 'true'
+        id: md5
+        shell: bash
+        run: |
+          ./2-c.sh
       - name: Commit
         if: steps.check_updata.outputs.changed2 == 'true'
         shell: bash
