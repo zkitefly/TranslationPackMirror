@@ -24,13 +24,13 @@ export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 cd './files-2444'
 ls
 
-echo "注：如果后面有类似 1.16-fabric 的需要改搜索格式为 `*[^A-Z]`，没有则使用 `*[^1-6]`（我也不知道为什么，艹）"
+#"注：如果后面有类似 1.16-fabric 的需要改搜索格式为 `*[^A-Z]`，没有则使用 `*[^1-6]`（我也不知道为什么，艹）"
 
-NAME0=$(find . -name "$sNAME0"*[^1-6].zip)
-NAME1=$(find . -name "$sNAME1"*[^1-6].zip)
-NAME2=$(find . -name "$sNAME2"*[^A-Z].zip) # 
-NAME3=$(find . -name "$sNAME3"*[^1-6].zip)
-NAME4=$(find . -name "$sNAME4"*[^A-Z].zip) # 
+NAME0=$(find . -name ""$sNAME0"*[^1-6].zip")
+NAME1=$(find . -name ""$sNAME1"*[^1-6].zip")
+NAME2=$(find . -name ""$sNAME2"*[^A-Z].zip") 
+NAME3=$(find . -name ""$sNAME3"*[^1-6].zip")
+NAME4=$(find . -name ""$sNAME4"*[^A-Z].zip") 
 
 cd ../
 
