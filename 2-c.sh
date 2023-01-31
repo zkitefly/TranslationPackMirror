@@ -75,12 +75,7 @@ sed -i 's\ \\g' "$MD5NAME4"
 rm *.txt
 mv *.md5 ../
 cd ../
-mv "1.10.2.md5" "files-2444-T"
-mv "$MD5NAME0" "files-2444-T"
-mv "$MD5NAME1" "files-2444-T"
-mv "$MD5NAME2" "files-2444-T"
-mv "$MD5NAME3" "files-2444-T"
-mv "$MD5NAME4" "files-2444-T"
+mv *.md5 files-2444-T
 
 ##########################################################################
 
