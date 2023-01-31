@@ -1,0 +1,43 @@
+name: Update resources2T
+
+on: 
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths: 
+      - '.github/workflows/c.yml'
+  schedule:
+    - cron: '0 20-22 */1 * *' # Every minute, between 20:00 and 22:59, every days
+  repository_dispatch:
+    types: [update_resources]
+
+jobs:
+  update_resources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: set time
+        shell: bash
+        run: |
+          sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: Md5 and MV
+        id: md5
+        shell: bash
+        run: |
+          ./2-c.sh
+      - name: Commit
+        shell: bash
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update resources2T（`date '+%Y-%m-%d %H:%M:%S'`）$GITHUB_RUN_ID
+
+          GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
+            "
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
