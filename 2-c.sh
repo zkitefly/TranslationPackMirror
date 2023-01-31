@@ -28,11 +28,11 @@ export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 cd './files-2444'
 ls
 
-NAME0=$(find . -name '$NAME0*')
-NAME1=$(find . -name '$NAME1*')
-NAME2=$(find . -name '$NAME2*')
-NAME3=$(find . -name '$NAME3*')
-NAME4=$(find . -name '$NAME4*')
+NAME0=$(find . -name "$NAME0"*)
+NAME1=$(find . -name "$NAME1"*)
+NAME2=$(find . -name "$NAME2"*)
+NAME3=$(find . -name "$NAME3"*)
+NAME4=$(find . -name "$NAME4"*)
 
 md5sum "${NAME0}" > "$MD5NAME0"
 md5sum "${NAME0}" > "$MD5NAME1"
