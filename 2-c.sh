@@ -36,6 +36,9 @@ cd ../
 
 cd './files-2444-T'
 
+mv 'Minecraft-Mod-Language-Modpack-1-10-2.zip' ../
+mv '1.10.2.md5' ../
+
 rm *.zip
 rm *.md5
 
