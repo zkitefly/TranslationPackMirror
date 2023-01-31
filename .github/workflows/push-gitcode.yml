@@ -1,6 +1,10 @@
 name: Push GitCode
 
-on: [push]
+on: 
+  push:
+    branches: [main]
+  schedule:
+    - cron: '* */1 * * *' # Every minute, every hour, every day
 
 jobs:
   to_gitlab:
