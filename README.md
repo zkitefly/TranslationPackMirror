@@ -1,5 +1,7 @@
 # TranslationPackMirror
 
+![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com/zkitefly/TranslationPackMirror&count_bg=%23008080&title_bg=%23008080&icon=&icon_color=%23008080&title=https://github.com/zkitefly/TranslationPackMirror&edge_flat=false)
+
 ![](https://github.githubassets.com/images/icons/emoji/tada.png)
 
 [**GitHub**](https://github.com/zkitefly/TranslationPackMirror) · [**GitCode**](https://gitcode.net/chearlai/translationpackmirror)
