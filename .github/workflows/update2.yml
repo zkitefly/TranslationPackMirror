@@ -30,6 +30,7 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
+          rm index2.txt
           wget --header='This_is_GitHub-Action_bot：https://github.com/zkitefly/TranslationPackMirror' --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O index2.txt "https://cfpa.cyan.cafe/project-hex/"
           if md5sum -c --quiet 'md52.txt'; then
             # No changes
