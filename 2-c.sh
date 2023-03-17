@@ -28,20 +28,18 @@ NAME0=$(find . -name ""$sNAME0"*[^1].zip")
 NAME2=$(find . -name ""$sNAME2"*[^1].zip") 
 NAME4=$(find . -name ""$sNAME4"*[^1].zip") 
 
-mkdir tmp
-mv "$NAME0" tmp
-mv "$NAME2" tmp
-mv "$NAME4" tmp
+mv "$NAME0" ../
+mv "$NAME2" ../
+mv "$NAME4" ../
 
 NAME1=$(find . -name ""$sNAME1"*[^1].zip")
 NAME3=$(find . -name ""$sNAME3"*[^1].zip")
 
-cd ./tmp
-mv "$NAME0" ../
-mv "$NAME2" ../
-mv "$NAME4" ../
 cd ../
-rm -r "./tmp"
+mv "$NAME0" ./files-2444
+mv "$NAME2" ./files-2444
+mv "$NAME4" ./files-2444
+cd ./files-2444
 
 cd ../
 
