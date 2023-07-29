@@ -22,7 +22,9 @@ export "sNAME4=Minecraft-Mod-Language-Package-1.18-fabric-$sNAME4"
 export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 
 cd './files-2444'
+echo "files-2444:"
 ls
+echo "==========="
 
 NAME0=$(find . -name "$sNAME0*.zip")
 NAME2=$(find . -name "$sNAME2*.zip") 
@@ -55,7 +57,9 @@ cd ../
 
 ##################################MD5####################################
 cd './files-2444'
+echo "files-2444:"
 ls
+echo "==========="
 
 md5sum "${NAME0}" > "$MD5NAME0"
 md5sum "${NAME1}" > "$MD5NAME1"
@@ -92,7 +96,9 @@ mv *.md5 files-2444-T
 
 ##################################MVFILE##################################
 cd './files-2444'
+echo "files-2444:"
 ls
+echo "==========="
 
 cp "${NAME0}" "$TNAME0"
 cp "${NAME1}" "$TNAME1"
@@ -134,5 +140,9 @@ rm 'Minecraft-Mod-Language-Modpack-1-191.zip'
 rm '1.191.md5'
 
 ##########################################################################
+echo "files-2444(NOW):"
+ls
+echo "==========="
+
 
 echo Done!
