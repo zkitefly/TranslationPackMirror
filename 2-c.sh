@@ -143,7 +143,7 @@ cp 'Minecraft-Mod-Language-Modpack-1-10-21.zip' 'Minecraft-Mod-Language-Modpack-
 cp '1.10.21.md5' '1.10.2.md5'
 
 rm 'Minecraft-Mod-Language-Modpack-1-10-21.zip'
-rm '1.101.md5'
+rm '1.10.21.md5'
 
 ##########################################################################
 echo "files-2444(NOW):"
