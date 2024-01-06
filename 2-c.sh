@@ -24,6 +24,14 @@ export "MD5NAME4=1.18-fabric.md5$MD5NAME4"
 export "TNAME5=Minecraft-Mod-Language-Modpack-1-19.zip$TNAME5"
 export "sNAME5=Minecraft-Mod-Language-Package-1.19-$sNAME5"
 export "MD5NAME5=1.19.md5$MD5NAME5"
+# Minecraft-Mod-Language-Package-1.20-XXXXXX
+export "TNAME6=Minecraft-Mod-Language-Modpack-1-20.zip$TNAME6"
+export "sNAME6=Minecraft-Mod-Language-Package-1.20-$sNAME6"
+export "MD5NAME6=1.20.md5$MD5NAME6"
+# Minecraft-Mod-Language-Package-1.20-fabric-XXXXXX
+export "TNAME7=Minecraft-Mod-Language-Modpack-1-20-Fabric.zip$TNAME7"
+export "sNAME7=Minecraft-Mod-Language-Package-1.20-fabric-$sNAME7"
+export "MD5NAME7=1.20-fabric.md5$MD5NAME7"
 
 cd './files-2444'
 echo "files-2444:"
@@ -32,18 +40,22 @@ echo "==========="
 
 NAME2=$(find . -name "$sNAME2*.zip")
 NAME4=$(find . -name "$sNAME4*.zip") 
+NAME7=$(find . -name "$sNAME7*.zip") 
 
 mv "$NAME2" ../
 mv "$NAME4" ../
+mv "$NAME7" ../
 
 NAME0=$(find . -name "$sNAME0*.zip")
 NAME1=$(find . -name "$sNAME1*.zip")
 NAME3=$(find . -name "$sNAME3*.zip")
 NAME5=$(find . -name "$sNAME5*.zip")
+NAME6=$(find . -name "$sNAME6*.zip")
 
 cd ../
 mv "$NAME2" ./files-2444
 mv "$NAME4" ./files-2444
+mv "$NAME6" ./files-2444
 cd ./files-2444
 
 cd ../
@@ -67,6 +79,8 @@ md5sum "${NAME2}" > "$MD5NAME2"
 md5sum "${NAME3}" > "$MD5NAME3"
 md5sum "${NAME4}" > "$MD5NAME4"
 md5sum "${NAME5}" > "$MD5NAME5"
+md5sum "${NAME6}" > "$MD5NAME6"
+md5sum "${NAME7}" > "$MD5NAME7"
 
 cut "$MD5NAME0" -c1-32 | tr a-z A-Z>"tmp0.txt"
 cut "$MD5NAME1" -c1-32 | tr a-z A-Z>"tmp1.txt"
@@ -74,6 +88,8 @@ cut "$MD5NAME2" -c1-32 | tr a-z A-Z>"tmp2.txt"
 cut "$MD5NAME3" -c1-32 | tr a-z A-Z>"tmp3.txt"
 cut "$MD5NAME4" -c1-32 | tr a-z A-Z>"tmp4.txt"
 cut "$MD5NAME5" -c1-32 | tr a-z A-Z>"tmp5.txt"
+cut "$MD5NAME6" -c1-32 | tr a-z A-Z>"tmp6.txt"
+cut "$MD5NAME7" -c1-32 | tr a-z A-Z>"tmp7.txt"
 
 cat "tmp0.txt" | tr '\n' ' '>"$MD5NAME0"
 cat "tmp1.txt" | tr '\n' ' '>"$MD5NAME1"
@@ -81,6 +97,8 @@ cat "tmp2.txt" | tr '\n' ' '>"$MD5NAME2"
 cat "tmp3.txt" | tr '\n' ' '>"$MD5NAME3"
 cat "tmp4.txt" | tr '\n' ' '>"$MD5NAME4"
 cat "tmp5.txt" | tr '\n' ' '>"$MD5NAME5"
+cat "tmp6.txt" | tr '\n' ' '>"$MD5NAME6"
+cat "tmp7.txt" | tr '\n' ' '>"$MD5NAME7"
 
 sed -i 's\ \\g' "$MD5NAME0"
 sed -i 's\ \\g' "$MD5NAME1"
@@ -88,6 +106,8 @@ sed -i 's\ \\g' "$MD5NAME2"
 sed -i 's\ \\g' "$MD5NAME3"
 sed -i 's\ \\g' "$MD5NAME4"
 sed -i 's\ \\g' "$MD5NAME5"
+sed -i 's\ \\g' "$MD5NAME6"
+sed -i 's\ \\g' "$MD5NAME7"
 
 rm *.txt
 mv *.md5 ../
@@ -110,6 +130,8 @@ cp "${NAME2}" "$TNAME2"
 cp "${NAME3}" "$TNAME3"
 cp "${NAME4}" "$TNAME4"
 cp "${NAME5}" "$TNAME5"
+cp "${NAME6}" "$TNAME6"
+cp "${NAME7}" "$TNAME7"
 
 mv "$TNAME0" ../
 mv "$TNAME1" ../
@@ -117,6 +139,8 @@ mv "$TNAME2" ../
 mv "$TNAME3" ../
 mv "$TNAME4" ../
 mv "$TNAME5" ../
+mv "$TNAME6" ../
+mv "$TNAME7" ../
 
 cd ../
 mv *.zip files-2444-T
