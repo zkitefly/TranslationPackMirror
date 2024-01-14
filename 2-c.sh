@@ -44,7 +44,7 @@ NAME7=$(find . -name "$sNAME7*.zip")
 
 mv "$NAME2" ../
 mv "$NAME4" ../
-mv "$NAME7" ../
+mv "$NAME6" ../
 
 NAME0=$(find . -name "$sNAME0*.zip")
 NAME1=$(find . -name "$sNAME1*.zip")
