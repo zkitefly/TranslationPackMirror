@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd './files-2444'
 ls
 echo '=================flashresources===================='

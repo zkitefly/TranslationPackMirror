@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ##########################################################################
 
 # Minecraft-Mod-Language-Package-1.12.2-XXXXXX
@@ -44,7 +46,7 @@ NAME7=$(find . -name "$sNAME7*.zip")
 
 mv "$NAME2" ../
 mv "$NAME4" ../
-mv "$NAME6" ../
+mv "$NAME7" ../
 
 NAME0=$(find . -name "$sNAME0*.zip")
 NAME1=$(find . -name "$sNAME1*.zip")
@@ -55,7 +57,7 @@ NAME6=$(find . -name "$sNAME6*.zip")
 cd ../
 mv "$NAME2" ./files-2444
 mv "$NAME4" ./files-2444
-mv "$NAME6" ./files-2444
+mv "$NAME7" ./files-2444
 cd ./files-2444
 
 cd ../
