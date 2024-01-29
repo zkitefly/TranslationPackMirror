@@ -45,44 +45,44 @@
     </thead>
     <tbody>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.19-537588.zip">Minecraft-Mod-Language-Package-1.19-537588.zip</a></td>
-        <td class="length">1,679,370</td>
-        <td class="modified">01/22/2024 21:50:05 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.12.2-8739C7.zip">Minecraft-Mod-Language-Package-1.12.2-8739C7.zip</a></td>
+        <td class="length">22</td>
+        <td class="modified">01/29/2024 14:49:29 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-54C0B5.zip">Minecraft-Mod-Language-Package-1.16-54C0B5.zip</a></td>
-        <td class="length">5,077,379</td>
-        <td class="modified">01/22/2024 21:49:52 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.19-1F83EB.zip">Minecraft-Mod-Language-Package-1.19-1F83EB.zip</a></td>
+        <td class="length">1,721,333</td>
+        <td class="modified">01/29/2024 14:49:52 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-4D7FA5.zip">Minecraft-Mod-Language-Package-1.18-4D7FA5.zip</a></td>
-        <td class="length">4,129,343</td>
-        <td class="modified">01/22/2024 21:50:00 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-fabric-75E5C1.zip">Minecraft-Mod-Language-Package-1.18-fabric-75E5C1.zip</a></td>
+        <td class="length">413,537</td>
+        <td class="modified">01/29/2024 14:49:50 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-fabric-62E3CD.zip">Minecraft-Mod-Language-Package-1.20-fabric-62E3CD.zip</a></td>
-        <td class="length">319,274</td>
-        <td class="modified">01/22/2024 21:50:08 &#x2B;00:00</td>
-      </tr>
-      <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-E717D4.zip">Minecraft-Mod-Language-Package-1.20-E717D4.zip</a></td>
-        <td class="length">1,183,928</td>
-        <td class="modified">01/22/2024 21:50:07 &#x2B;00:00</td>
-      </tr>
-      <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.12.2-BA66EE.zip">Minecraft-Mod-Language-Package-1.12.2-BA66EE.zip</a></td>
-        <td class="length">7,029,096</td>
-        <td class="modified">01/22/2024 21:49:43 &#x2B;00:00</td>
-      </tr>
-      <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-fabric-732853.zip">Minecraft-Mod-Language-Package-1.18-fabric-732853.zip</a></td>
-        <td class="length">408,272</td>
-        <td class="modified">01/22/2024 21:50:03 &#x2B;00:00</td>
-      </tr>
-      <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-fabric-138E5F.zip">Minecraft-Mod-Language-Package-1.16-fabric-138E5F.zip</a></td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-fabric-D67F06.zip">Minecraft-Mod-Language-Package-1.16-fabric-D67F06.zip</a></td>
         <td class="length">298,956</td>
-        <td class="modified">01/22/2024 21:50:01 &#x2B;00:00</td>
+        <td class="modified">01/29/2024 14:49:48 &#x2B;00:00</td>
+      </tr>
+      <tr class="file">
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-64A5D6.zip">Minecraft-Mod-Language-Package-1.20-64A5D6.zip</a></td>
+        <td class="length">1,303,384</td>
+        <td class="modified">01/29/2024 14:49:54 &#x2B;00:00</td>
+      </tr>
+      <tr class="file">
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-53871C.zip">Minecraft-Mod-Language-Package-1.16-53871C.zip</a></td>
+        <td class="length">5,078,987</td>
+        <td class="modified">01/29/2024 14:49:38 &#x2B;00:00</td>
+      </tr>
+      <tr class="file">
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-fabric-2A6765.zip">Minecraft-Mod-Language-Package-1.20-fabric-2A6765.zip</a></td>
+        <td class="length">338,568</td>
+        <td class="modified">01/29/2024 14:49:55 &#x2B;00:00</td>
+      </tr>
+      <tr class="file">
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-034145.zip">Minecraft-Mod-Language-Package-1.18-034145.zip</a></td>
+        <td class="length">4,133,097</td>
+        <td class="modified">01/29/2024 14:49:47 &#x2B;00:00</td>
       </tr>
     </tbody>
     </table>
