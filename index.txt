@@ -15,10 +15,10 @@
 <a href="Minecraft-Mod-Language-Modpack-1-16-Fabric.zip">Minecraft-Mod-Language-Modpack-1-16-Fabric.zip</a>     13-May-2024 20:00              297836
 <a href="Minecraft-Mod-Language-Modpack-1-16.zip">Minecraft-Mod-Language-Modpack-1-16.zip</a>            13-May-2024 20:00             4211687
 <a href="Minecraft-Mod-Language-Modpack-1-18-Fabric.zip">Minecraft-Mod-Language-Modpack-1-18-Fabric.zip</a>     13-May-2024 20:00              406141
-<a href="Minecraft-Mod-Language-Modpack-1-18.zip">Minecraft-Mod-Language-Modpack-1-18.zip</a>            12-May-2024 20:00             3534703
-<a href="Minecraft-Mod-Language-Modpack-1-19.zip">Minecraft-Mod-Language-Modpack-1-19.zip</a>            12-May-2024 20:00              761063
+<a href="Minecraft-Mod-Language-Modpack-1-18.zip">Minecraft-Mod-Language-Modpack-1-18.zip</a>            13-May-2024 20:00             3535324
+<a href="Minecraft-Mod-Language-Modpack-1-19.zip">Minecraft-Mod-Language-Modpack-1-19.zip</a>            13-May-2024 20:00              761621
 <a href="Minecraft-Mod-Language-Modpack-1-20-Fabric.zip">Minecraft-Mod-Language-Modpack-1-20-Fabric.zip</a>     13-May-2024 20:00              302746
-<a href="Minecraft-Mod-Language-Modpack-1-20.zip">Minecraft-Mod-Language-Modpack-1-20.zip</a>            12-May-2024 20:00              874250
+<a href="Minecraft-Mod-Language-Modpack-1-20.zip">Minecraft-Mod-Language-Modpack-1-20.zip</a>            13-May-2024 20:00              874791
 <a href="Minecraft-Mod-Language-Modpack.zip">Minecraft-Mod-Language-Modpack.zip</a>                 13-May-2024 20:00             6905075
 <a href="Notice.txt">Notice.txt</a>                                         15-Jan-2023 16:00                 184
 </pre><hr></body>
