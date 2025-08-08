@@ -45,49 +45,49 @@
     </thead>
     <tbody>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-fabric-B8B4A2.zip">Minecraft-Mod-Language-Package-1.20-fabric-B8B4A2.zip</a></td>
-        <td class="length">1,034,666</td>
-        <td class="modified">08/01/2025 19:41:41 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-fabric-BD4F9D.zip">Minecraft-Mod-Language-Package-1.20-fabric-BD4F9D.zip</a></td>
+        <td class="length">1,041,700</td>
+        <td class="modified">08/08/2025 16:32:45 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-8A4F7F.zip">Minecraft-Mod-Language-Package-1.18-8A4F7F.zip</a></td>
-        <td class="length">4,305,079</td>
-        <td class="modified">08/01/2025 19:41:28 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.21-139F8C.zip">Minecraft-Mod-Language-Package-1.21-139F8C.zip</a></td>
+        <td class="length">3,658,310</td>
+        <td class="modified">08/08/2025 16:32:48 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-59862A.zip">Minecraft-Mod-Language-Package-1.20-59862A.zip</a></td>
-        <td class="length">4,432,857</td>
-        <td class="modified">08/01/2025 19:41:39 &#x2B;00:00</td>
-      </tr>
-      <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-fabric-A2B9EF.zip">Minecraft-Mod-Language-Package-1.18-fabric-A2B9EF.zip</a></td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-fabric-454C7E.zip">Minecraft-Mod-Language-Package-1.18-fabric-454C7E.zip</a></td>
         <td class="length">486,710</td>
-        <td class="modified">08/01/2025 19:41:31 &#x2B;00:00</td>
+        <td class="modified">08/08/2025 16:32:35 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.12.2-960CA0.zip">Minecraft-Mod-Language-Package-1.12.2-960CA0.zip</a></td>
-        <td class="length">7,375,702</td>
-        <td class="modified">08/01/2025 19:41:11 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.19-C88707.zip">Minecraft-Mod-Language-Package-1.19-C88707.zip</a></td>
+        <td class="length">1,939,142</td>
+        <td class="modified">08/08/2025 16:32:38 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.19-0685E5.zip">Minecraft-Mod-Language-Package-1.19-0685E5.zip</a></td>
-        <td class="length">1,963,817</td>
-        <td class="modified">08/01/2025 19:41:34 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.20-91F71B.zip">Minecraft-Mod-Language-Package-1.20-91F71B.zip</a></td>
+        <td class="length">4,426,795</td>
+        <td class="modified">08/08/2025 16:32:43 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-4717EA.zip">Minecraft-Mod-Language-Package-1.16-4717EA.zip</a></td>
-        <td class="length">5,187,873</td>
-        <td class="modified">08/01/2025 19:41:20 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.18-FABBDF.zip">Minecraft-Mod-Language-Package-1.18-FABBDF.zip</a></td>
+        <td class="length">4,305,414</td>
+        <td class="modified">08/08/2025 16:32:32 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.21-B2C3CC.zip">Minecraft-Mod-Language-Package-1.21-B2C3CC.zip</a></td>
-        <td class="length">3,661,335</td>
-        <td class="modified">08/01/2025 19:41:45 &#x2B;00:00</td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-A0F0CF.zip">Minecraft-Mod-Language-Package-1.16-A0F0CF.zip</a></td>
+        <td class="length">5,189,594</td>
+        <td class="modified">08/08/2025 16:32:25 &#x2B;00:00</td>
       </tr>
       <tr class="file">
-        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-fabric-7F60E1.zip">Minecraft-Mod-Language-Package-1.16-fabric-7F60E1.zip</a></td>
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.12.2-316F0D.zip">Minecraft-Mod-Language-Package-1.12.2-316F0D.zip</a></td>
+        <td class="length">7,375,371</td>
+        <td class="modified">08/08/2025 16:32:17 &#x2B;00:00</td>
+      </tr>
+      <tr class="file">
+        <td class="name"><a href="./Minecraft-Mod-Language-Package-1.16-fabric-8BFF3B.zip">Minecraft-Mod-Language-Package-1.16-fabric-8BFF3B.zip</a></td>
         <td class="length">315,141</td>
-        <td class="modified">08/01/2025 19:41:29 &#x2B;00:00</td>
+        <td class="modified">08/08/2025 16:32:33 &#x2B;00:00</td>
       </tr>
     </tbody>
     </table>
