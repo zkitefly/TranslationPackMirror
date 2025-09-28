@@ -34,6 +34,10 @@ export "MD5NAME6=1.20.md5$MD5NAME6"
 export "TNAME7=Minecraft-Mod-Language-Modpack-1-20-Fabric.zip$TNAME7"
 export "sNAME7=Minecraft-Mod-Language-Package-1.20-fabric-$sNAME7"
 export "MD5NAME7=1.20-fabric.md5$MD5NAME7"
+# Minecraft-Mod-Language-Package-1.21-XXXXXX
+export "TNAME8=Minecraft-Mod-Language-Modpack-1-21.zip$TNAME8"
+export "sNAME8=Minecraft-Mod-Language-Package-1.21-$sNAME8"
+export "MD5NAME8=1.21.md5$MD5NAME8"
 
 cd './files-2444'
 echo "files-2444:"
@@ -53,6 +57,8 @@ NAME1=$(find . -name "$sNAME1*.zip")
 NAME3=$(find . -name "$sNAME3*.zip")
 NAME5=$(find . -name "$sNAME5*.zip")
 NAME6=$(find . -name "$sNAME6*.zip")
+NAME8=$(find . -name "$sNAME8*.zip")
+
 
 cd ../
 mv "$NAME2" ./files-2444
@@ -83,6 +89,7 @@ md5sum "${NAME4}" > "$MD5NAME4"
 md5sum "${NAME5}" > "$MD5NAME5"
 md5sum "${NAME6}" > "$MD5NAME6"
 md5sum "${NAME7}" > "$MD5NAME7"
+md5sum "${NAME8}" > "$MD5NAME8"
 
 cut "$MD5NAME0" -c1-32 | tr a-z A-Z>"tmp0.txt"
 cut "$MD5NAME1" -c1-32 | tr a-z A-Z>"tmp1.txt"
@@ -92,6 +99,7 @@ cut "$MD5NAME4" -c1-32 | tr a-z A-Z>"tmp4.txt"
 cut "$MD5NAME5" -c1-32 | tr a-z A-Z>"tmp5.txt"
 cut "$MD5NAME6" -c1-32 | tr a-z A-Z>"tmp6.txt"
 cut "$MD5NAME7" -c1-32 | tr a-z A-Z>"tmp7.txt"
+cut "$MD5NAME8" -c1-32 | tr a-z A-Z>"tmp8.txt"
 
 cat "tmp0.txt" | tr '\n' ' '>"$MD5NAME0"
 cat "tmp1.txt" | tr '\n' ' '>"$MD5NAME1"
@@ -101,6 +109,7 @@ cat "tmp4.txt" | tr '\n' ' '>"$MD5NAME4"
 cat "tmp5.txt" | tr '\n' ' '>"$MD5NAME5"
 cat "tmp6.txt" | tr '\n' ' '>"$MD5NAME6"
 cat "tmp7.txt" | tr '\n' ' '>"$MD5NAME7"
+cat "tmp8.txt" | tr '\n' ' '>"$MD5NAME8"
 
 sed -i 's\ \\g' "$MD5NAME0"
 sed -i 's\ \\g' "$MD5NAME1"
@@ -110,6 +119,7 @@ sed -i 's\ \\g' "$MD5NAME4"
 sed -i 's\ \\g' "$MD5NAME5"
 sed -i 's\ \\g' "$MD5NAME6"
 sed -i 's\ \\g' "$MD5NAME7"
+sed -i 's\ \\g' "$MD5NAME8"
 
 rm *.txt
 mv *.md5 ../
@@ -134,6 +144,7 @@ cp "${NAME4}" "$TNAME4"
 cp "${NAME5}" "$TNAME5"
 cp "${NAME6}" "$TNAME6"
 cp "${NAME7}" "$TNAME7"
+cp "${NAME8}" "$TNAME8"
 
 mv "$TNAME0" ../
 mv "$TNAME1" ../
@@ -143,6 +154,7 @@ mv "$TNAME4" ../
 mv "$TNAME5" ../
 mv "$TNAME6" ../
 mv "$TNAME7" ../
+mv "$TNAME8" ../
 
 cd ../
 mv *.zip files-2444-T
